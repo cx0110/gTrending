@@ -1,6 +1,6 @@
 requests
 beautifulsoup4
 langchain
-langchain-openail
-angchain-community
+langchain-openai
+langchain-community
 pyyaml
