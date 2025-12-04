@@ -1,0 +1,53 @@
+name: Daily Trending Scraper
+
+on:
+  schedule:
+    # 每天 UTC 时间 01:00 (北京时间 09:00) 运行
+    - cron: '0 1 * * *'
+  workflow_dispatch: # 允许手动触发
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write  # 必须开启写入权限
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run Scraper
+        env:
+          # 在 GitHub Secrets 中配置这些变量
+          # 设为 'true' 启用 LangChain，设为 'false' 仅抓取
+          ENABLE_LLM: ${{ vars.ENABLE_LLM || 'false' }} 
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          # 如果使用第三方/代理，请配置 BASE_URL，否则默认官方
+          OPENAI_BASE_URL: ${{ secrets.OPENAI_BASE_URL }}
+        run: python main.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 暂存所有更改 (包括 archives/ 和 data/history.json 和 README.md)
+          git add .
+          
+          # 检查是否有变动
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "bot: update trending for $(date +'%Y-%m-%d')"
+            git push
+          fi
