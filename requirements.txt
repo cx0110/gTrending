@@ -1,1 +1,6 @@
-requestsbeautifulsoup4langchainlangchain-openailangchain-communitypyyaml
+requests
+beautifulsoup4
+langchain
+langchain-openail
+angchain-community
+pyyaml
