@@ -280,5 +280,299 @@
     "description": "PostgreSQL driver and toolkit for Go",
     "ai_summary": "",
     "url": "https://github.com/jackc/pgx"
+  },
+  "basecamp/fizzy": {
+    "full_name": "basecamp/fizzy",
+    "description": "Kanban as it should be. Not as it has been.",
+    "ai_summary": "",
+    "url": "https://github.com/basecamp/fizzy"
+  },
+  "oven-sh/bun": {
+    "full_name": "oven-sh/bun",
+    "description": "Incredibly fast JavaScript runtime, bundler, test runner, and package manager – all in one",
+    "ai_summary": "",
+    "url": "https://github.com/oven-sh/bun"
+  },
+  "DayuanJiang/next-ai-draw-io": {
+    "full_name": "DayuanJiang/next-ai-draw-io",
+    "description": "A next.js web application that integrates AI capabilities with draw.io diagrams. This app allows you to create, modify, and enhance diagrams through natural language commands and AI-assisted visualization.",
+    "ai_summary": "",
+    "url": "https://github.com/DayuanJiang/next-ai-draw-io"
+  },
+  "openai/codex": {
+    "full_name": "openai/codex",
+    "description": "Lightweight coding agent that runs in your terminal",
+    "ai_summary": "",
+    "url": "https://github.com/openai/codex"
+  },
+  "LadybirdBrowser/ladybird": {
+    "full_name": "LadybirdBrowser/ladybird",
+    "description": "Truly independent web browser",
+    "ai_summary": "",
+    "url": "https://github.com/LadybirdBrowser/ladybird"
+  },
+  "ashishpatel26/500-AI-Agents-Projects": {
+    "full_name": "ashishpatel26/500-AI-Agents-Projects",
+    "description": "The 500 AI Agents Projects is a curated collection of AI agent use cases across various industries. It showcases practical applications and provides links to open-source projects for implementation, illustrating how AI agents are transforming sectors such as healthcare, finance, education, retail, and more.",
+    "ai_summary": "",
+    "url": "https://github.com/ashishpatel26/500-AI-Agents-Projects"
+  },
+  "sst/opencode": {
+    "full_name": "sst/opencode",
+    "description": "The AI coding agent built for the terminal.",
+    "ai_summary": "",
+    "url": "https://github.com/sst/opencode"
+  },
+  "ZJU-LLMs/Foundations-of-LLMs": {
+    "full_name": "ZJU-LLMs/Foundations-of-LLMs",
+    "description": "无描述",
+    "ai_summary": "",
+    "url": "https://github.com/ZJU-LLMs/Foundations-of-LLMs"
+  },
+  "trustedsec/social-engineer-toolkit": {
+    "full_name": "trustedsec/social-engineer-toolkit",
+    "description": "The Social-Engineer Toolkit (SET) repository from TrustedSec - All new versions of SET will be deployed here.",
+    "ai_summary": "",
+    "url": "https://github.com/trustedsec/social-engineer-toolkit"
+  },
+  "Flowseal/zapret-discord-youtube": {
+    "full_name": "Flowseal/zapret-discord-youtube",
+    "description": "无描述",
+    "ai_summary": "",
+    "url": "https://github.com/Flowseal/zapret-discord-youtube"
+  },
+  "microsoft/ML-For-Beginners": {
+    "full_name": "microsoft/ML-For-Beginners",
+    "description": "12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/ML-For-Beginners"
+  },
+  "kubernetes/kubernetes": {
+    "full_name": "kubernetes/kubernetes",
+    "description": "Production-Grade Container Scheduling and Management",
+    "ai_summary": "",
+    "url": "https://github.com/kubernetes/kubernetes"
+  },
+  "lynx-family/lynx": {
+    "full_name": "lynx-family/lynx",
+    "description": "Empower the Web community and invite more to build across platforms.",
+    "ai_summary": "",
+    "url": "https://github.com/lynx-family/lynx"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "full_name": "codecrafters-io/build-your-own-x",
+    "description": "Master programming by recreating your favorite technologies from scratch.",
+    "ai_summary": "",
+    "url": "https://github.com/codecrafters-io/build-your-own-x"
+  },
+  "wshobson/agents": {
+    "full_name": "wshobson/agents",
+    "description": "Intelligent automation and multi-agent orchestration for Claude Code",
+    "ai_summary": "",
+    "url": "https://github.com/wshobson/agents"
+  },
+  "bin456789/reinstall": {
+    "full_name": "bin456789/reinstall",
+    "description": "一键DD/重装脚本 (One-click reinstall OS on VPS)",
+    "ai_summary": "",
+    "url": "https://github.com/bin456789/reinstall"
+  },
+  "streamlit/streamlit": {
+    "full_name": "streamlit/streamlit",
+    "description": "Streamlit — A faster way to build and share data apps.",
+    "ai_summary": "",
+    "url": "https://github.com/streamlit/streamlit"
+  },
+  "getzep/graphiti": {
+    "full_name": "getzep/graphiti",
+    "description": "Build Real-Time Knowledge Graphs for AI Agents",
+    "ai_summary": "",
+    "url": "https://github.com/getzep/graphiti"
+  },
+  "openai/whisper": {
+    "full_name": "openai/whisper",
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision",
+    "ai_summary": "",
+    "url": "https://github.com/openai/whisper"
+  },
+  "frappe/erpnext": {
+    "full_name": "frappe/erpnext",
+    "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+    "ai_summary": "",
+    "url": "https://github.com/frappe/erpnext"
+  },
+  "TheAlgorithms/Python": {
+    "full_name": "TheAlgorithms/Python",
+    "description": "All Algorithms implemented in Python",
+    "ai_summary": "",
+    "url": "https://github.com/TheAlgorithms/Python"
+  },
+  "langchain-ai/langgraph": {
+    "full_name": "langchain-ai/langgraph",
+    "description": "Build resilient language agents as graphs.",
+    "ai_summary": "",
+    "url": "https://github.com/langchain-ai/langgraph"
+  },
+  "NVIDIA/TransformerEngine": {
+    "full_name": "NVIDIA/TransformerEngine",
+    "description": "A library for accelerating Transformer models on NVIDIA GPUs, including using 8-bit and 4-bit floating point (FP8 and FP4) precision on Hopper, Ada and Blackwell GPUs, to provide better performance with lower memory utilization in both training and inference.",
+    "ai_summary": "",
+    "url": "https://github.com/NVIDIA/TransformerEngine"
+  },
+  "microsoft/markitdown": {
+    "full_name": "microsoft/markitdown",
+    "description": "Python tool for converting files and office documents to Markdown.",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/markitdown"
+  },
+  "zhu-xlab/GlobalBuildingAtlas": {
+    "full_name": "zhu-xlab/GlobalBuildingAtlas",
+    "description": "无描述",
+    "ai_summary": "",
+    "url": "https://github.com/zhu-xlab/GlobalBuildingAtlas"
+  },
+  "opengeos/segment-geospatial": {
+    "full_name": "opengeos/segment-geospatial",
+    "description": "A Python package for segmenting geospatial data with the Segment Anything Model (SAM)",
+    "ai_summary": "",
+    "url": "https://github.com/opengeos/segment-geospatial"
+  },
+  "NVIDIA-NeMo/NeMo": {
+    "full_name": "NVIDIA-NeMo/NeMo",
+    "description": "A scalable generative AI framework built for researchers and developers working on Large Language Models, Multimodal, and Speech AI (Automatic Speech Recognition and Text-to-Speech)",
+    "ai_summary": "",
+    "url": "https://github.com/NVIDIA-NeMo/NeMo"
+  },
+  "minio/minio": {
+    "full_name": "minio/minio",
+    "description": "MinIO is a high-performance, S3 compatible object store, open sourced under GNU AGPLv3 license.",
+    "ai_summary": "",
+    "url": "https://github.com/minio/minio"
+  },
+  "ollama/ollama": {
+    "full_name": "ollama/ollama",
+    "description": "Get up and running with OpenAI gpt-oss, DeepSeek-R1, Gemma 3 and other models.",
+    "ai_summary": "",
+    "url": "https://github.com/ollama/ollama"
+  },
+  "mudler/LocalAI": {
+    "full_name": "mudler/LocalAI",
+    "description": "🤖 The free, Open Source alternative to OpenAI, Claude and others. Self-hosted and local-first. Drop-in replacement for OpenAI, running on consumer-grade hardware. No GPU required. Runs gguf, transformers, diffusers and many more. Features: Generate Text, MCP, Audio, Video, Images, Voice Cloning, Distributed, P2P and decentralized inference",
+    "ai_summary": "",
+    "url": "https://github.com/mudler/LocalAI"
+  },
+  "containerd/containerd": {
+    "full_name": "containerd/containerd",
+    "description": "An open and reliable container runtime",
+    "ai_summary": "",
+    "url": "https://github.com/containerd/containerd"
+  },
+  "argoproj/argo-cd": {
+    "full_name": "argoproj/argo-cd",
+    "description": "Declarative Continuous Deployment for Kubernetes",
+    "ai_summary": "",
+    "url": "https://github.com/argoproj/argo-cd"
+  },
+  "charmbracelet/crush": {
+    "full_name": "charmbracelet/crush",
+    "description": "The glamourous AI coding agent for your favourite terminal 💘",
+    "ai_summary": "",
+    "url": "https://github.com/charmbracelet/crush"
+  },
+  "golang/go": {
+    "full_name": "golang/go",
+    "description": "The Go programming language",
+    "ai_summary": "",
+    "url": "https://github.com/golang/go"
+  },
+  "maximhq/bifrost": {
+    "full_name": "maximhq/bifrost",
+    "description": "Fastest LLM gateway (50x faster than LiteLLM) with adaptive load balancer, cluster mode, guardrails, 1000+ models support & <100 µs overhead at 5k RPS.",
+    "ai_summary": "",
+    "url": "https://github.com/maximhq/bifrost"
+  },
+  "prometheus/prometheus": {
+    "full_name": "prometheus/prometheus",
+    "description": "The Prometheus monitoring system and time series database.",
+    "ai_summary": "",
+    "url": "https://github.com/prometheus/prometheus"
+  },
+  "modelcontextprotocol/go-sdk": {
+    "full_name": "modelcontextprotocol/go-sdk",
+    "description": "The official Go SDK for Model Context Protocol servers and clients. Maintained in collaboration with Google.",
+    "ai_summary": "",
+    "url": "https://github.com/modelcontextprotocol/go-sdk"
+  },
+  "cloudflare/cloudflared": {
+    "full_name": "cloudflare/cloudflared",
+    "description": "Cloudflare Tunnel client",
+    "ai_summary": "",
+    "url": "https://github.com/cloudflare/cloudflared"
+  },
+  "microsoft/typescript-go": {
+    "full_name": "microsoft/typescript-go",
+    "description": "Staging repo for development of native port of TypeScript",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/typescript-go"
+  },
+  "aquasecurity/trivy": {
+    "full_name": "aquasecurity/trivy",
+    "description": "Find vulnerabilities, misconfigurations, secrets, SBOM in containers, Kubernetes, code repositories, clouds and more",
+    "ai_summary": "",
+    "url": "https://github.com/aquasecurity/trivy"
+  },
+  "DataDog/datadog-agent": {
+    "full_name": "DataDog/datadog-agent",
+    "description": "Main repository for Datadog Agent",
+    "ai_summary": "",
+    "url": "https://github.com/DataDog/datadog-agent"
+  },
+  "henrygd/beszel": {
+    "full_name": "henrygd/beszel",
+    "description": "Lightweight server monitoring hub with historical data, docker stats, and alerts.",
+    "ai_summary": "",
+    "url": "https://github.com/henrygd/beszel"
+  },
+  "tulir/whatsmeow": {
+    "full_name": "tulir/whatsmeow",
+    "description": "Go library for the WhatsApp web multidevice API",
+    "ai_summary": "",
+    "url": "https://github.com/tulir/whatsmeow"
+  },
+  "gofr-dev/gofr": {
+    "full_name": "gofr-dev/gofr",
+    "description": "An opinionated GoLang framework for accelerated microservice development. Built in support for databases and observability.",
+    "ai_summary": "",
+    "url": "https://github.com/gofr-dev/gofr"
+  },
+  "grafana/alloy": {
+    "full_name": "grafana/alloy",
+    "description": "OpenTelemetry Collector distribution with programmable pipelines",
+    "ai_summary": "",
+    "url": "https://github.com/grafana/alloy"
+  },
+  "usememos/memos": {
+    "full_name": "usememos/memos",
+    "description": "An open-source, self-hosted note-taking service. Your thoughts, your data, your control — no tracking, no ads, no subscription fees.",
+    "ai_summary": "",
+    "url": "https://github.com/usememos/memos"
+  },
+  "seaweedfs/seaweedfs": {
+    "full_name": "seaweedfs/seaweedfs",
+    "description": "SeaweedFS is a fast distributed storage system for blobs, objects, files, and data lake, for billions of files! Blob store has O(1) disk seek, cloud tiering. Filer supports Cloud Drive, xDC replication, Kubernetes, POSIX FUSE mount, S3 API, S3 Gateway, Hadoop, WebDAV, encryption, Erasure Coding. Enterprise version is at seaweedfs.com.",
+    "ai_summary": "",
+    "url": "https://github.com/seaweedfs/seaweedfs"
+  },
+  "kyverno/kyverno": {
+    "full_name": "kyverno/kyverno",
+    "description": "Cloud Native Policy Management",
+    "ai_summary": "",
+    "url": "https://github.com/kyverno/kyverno"
+  },
+  "projectdiscovery/nuclei": {
+    "full_name": "projectdiscovery/nuclei",
+    "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.",
+    "ai_summary": "",
+    "url": "https://github.com/projectdiscovery/nuclei"
   }
 }
