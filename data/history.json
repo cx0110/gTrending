@@ -574,5 +574,197 @@
     "description": "Nuclei is a fast, customizable vulnerability scanner powered by the global security community and built on a simple YAML-based DSL, enabling collaboration to tackle trending vulnerabilities on the internet. It helps you find vulnerabilities in your applications, APIs, networks, DNS, and cloud configurations.",
     "ai_summary": "",
     "url": "https://github.com/projectdiscovery/nuclei"
+  },
+  "rustfs/rustfs": {
+    "full_name": "rustfs/rustfs",
+    "description": "🚀2.3x faster than MinIO for 4KB object payloads. RustFS is an open-source, S3-compatible high-performance object storage system supporting migration and coexistence with other S3-compatible platforms such as MinIO and Ceph.",
+    "ai_summary": "",
+    "url": "https://github.com/rustfs/rustfs"
+  },
+  "facebook/react": {
+    "full_name": "facebook/react",
+    "description": "The library for web and native user interfaces.",
+    "ai_summary": "",
+    "url": "https://github.com/facebook/react"
+  },
+  "CorentinTh/it-tools": {
+    "full_name": "CorentinTh/it-tools",
+    "description": "Collection of handy online tools for developers, with great UX.",
+    "ai_summary": "",
+    "url": "https://github.com/CorentinTh/it-tools"
+  },
+  "vercel/next.js": {
+    "full_name": "vercel/next.js",
+    "description": "The React Framework",
+    "ai_summary": "",
+    "url": "https://github.com/vercel/next.js"
+  },
+  "sinelaw/fresh": {
+    "full_name": "sinelaw/fresh",
+    "description": "Text editor for your terminal: easy, powerful and fast",
+    "ai_summary": "",
+    "url": "https://github.com/sinelaw/fresh"
+  },
+  "mtdvio/every-programmer-should-know": {
+    "full_name": "mtdvio/every-programmer-should-know",
+    "description": "A collection of (mostly) technical things every software developer should know about",
+    "ai_summary": "",
+    "url": "https://github.com/mtdvio/every-programmer-should-know"
+  },
+  "microsoft/VibeVoice": {
+    "full_name": "microsoft/VibeVoice",
+    "description": "Open-Source Frontier Voice AI",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/VibeVoice"
+  },
+  "TelegramMessenger/Telegram-iOS": {
+    "full_name": "TelegramMessenger/Telegram-iOS",
+    "description": "Telegram-iOS",
+    "ai_summary": "",
+    "url": "https://github.com/TelegramMessenger/Telegram-iOS"
+  },
+  "fastapi/fastapi": {
+    "full_name": "fastapi/fastapi",
+    "description": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
+    "ai_summary": "",
+    "url": "https://github.com/fastapi/fastapi"
+  },
+  "airbytehq/airbyte": {
+    "full_name": "airbytehq/airbyte",
+    "description": "The leading data integration platform for ETL / ELT data pipelines from APIs, databases & files to data warehouses, data lakes & data lakehouses. Both self-hosted and Cloud-hosted.",
+    "ai_summary": "",
+    "url": "https://github.com/airbytehq/airbyte"
+  },
+  "YaoFANGUK/video-subtitle-remover": {
+    "full_name": "YaoFANGUK/video-subtitle-remover",
+    "description": "基于AI的图片/视频硬字幕去除、文本水印去除，无损分辨率生成去字幕、去水印后的图片/视频文件。无需申请第三方API，本地实现。AI-based tool for removing hard-coded subtitles and text-like watermarks from videos or Pictures.",
+    "ai_summary": "",
+    "url": "https://github.com/YaoFANGUK/video-subtitle-remover"
+  },
+  "zulip/zulip": {
+    "full_name": "zulip/zulip",
+    "description": "Zulip server and web application. Open-source team chat that helps teams stay productive and focused.",
+    "ai_summary": "",
+    "url": "https://github.com/zulip/zulip"
+  },
+  "ModelTC/LightX2V": {
+    "full_name": "ModelTC/LightX2V",
+    "description": "Light Video Generation Inference Framework",
+    "ai_summary": "",
+    "url": "https://github.com/ModelTC/LightX2V"
+  },
+  "fastapi-practices/fastapi_best_architecture": {
+    "full_name": "fastapi-practices/fastapi_best_architecture",
+    "description": "基于 FastAPI 构建的企业级后端架构解决方案",
+    "ai_summary": "",
+    "url": "https://github.com/fastapi-practices/fastapi_best_architecture"
+  },
+  "donnemartin/system-design-primer": {
+    "full_name": "donnemartin/system-design-primer",
+    "description": "Learn how to design large-scale systems. Prep for the system design interview. Includes Anki flashcards.",
+    "ai_summary": "",
+    "url": "https://github.com/donnemartin/system-design-primer"
+  },
+  "666ghj/BettaFish": {
+    "full_name": "666ghj/BettaFish",
+    "description": "微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。",
+    "ai_summary": "",
+    "url": "https://github.com/666ghj/BettaFish"
+  },
+  "opendatalab/MinerU": {
+    "full_name": "opendatalab/MinerU",
+    "description": "Transforms complex documents like PDFs into LLM-ready markdown/JSON for your Agentic workflows.",
+    "ai_summary": "",
+    "url": "https://github.com/opendatalab/MinerU"
+  },
+  "RosettaCommons/foundry": {
+    "full_name": "RosettaCommons/foundry",
+    "description": "Central repository for biomolecular foundation models with shared trainers and pipeline components",
+    "ai_summary": "",
+    "url": "https://github.com/RosettaCommons/foundry"
+  },
+  "github/spec-kit": {
+    "full_name": "github/spec-kit",
+    "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+    "ai_summary": "",
+    "url": "https://github.com/github/spec-kit"
+  },
+  "onnx/onnx": {
+    "full_name": "onnx/onnx",
+    "description": "Open standard for machine learning interoperability",
+    "ai_summary": "",
+    "url": "https://github.com/onnx/onnx"
+  },
+  "slackhq/nebula": {
+    "full_name": "slackhq/nebula",
+    "description": "A scalable overlay networking tool with a focus on performance, simplicity and security",
+    "ai_summary": "",
+    "url": "https://github.com/slackhq/nebula"
+  },
+  "open-policy-agent/opa": {
+    "full_name": "open-policy-agent/opa",
+    "description": "Open Policy Agent (OPA) is an open source, general-purpose policy engine.",
+    "ai_summary": "",
+    "url": "https://github.com/open-policy-agent/opa"
+  },
+  "kubernetes-sigs/karpenter": {
+    "full_name": "kubernetes-sigs/karpenter",
+    "description": "Karpenter is a Kubernetes Node Autoscaler built for flexibility, performance, and simplicity.",
+    "ai_summary": "",
+    "url": "https://github.com/kubernetes-sigs/karpenter"
+  },
+  "kagent-dev/kagent": {
+    "full_name": "kagent-dev/kagent",
+    "description": "Cloud Native Agentic AI | Discord: https://bit.ly/kagentdiscord",
+    "ai_summary": "",
+    "url": "https://github.com/kagent-dev/kagent"
+  },
+  "docker/mcp-gateway": {
+    "full_name": "docker/mcp-gateway",
+    "description": "docker mcp CLI plugin / MCP Gateway",
+    "ai_summary": "",
+    "url": "https://github.com/docker/mcp-gateway"
+  },
+  "nats-io/nats-server": {
+    "full_name": "nats-io/nats-server",
+    "description": "High-Performance server for NATS.io, the cloud and edge native messaging system.",
+    "ai_summary": "",
+    "url": "https://github.com/nats-io/nats-server"
+  },
+  "cloudnative-pg/cloudnative-pg": {
+    "full_name": "cloudnative-pg/cloudnative-pg",
+    "description": "CloudNativePG is a comprehensive platform designed to seamlessly manage PostgreSQL databases within Kubernetes environments, covering the entire operational lifecycle from initial deployment to ongoing maintenance",
+    "ai_summary": "",
+    "url": "https://github.com/cloudnative-pg/cloudnative-pg"
+  },
+  "fleetdm/fleet": {
+    "full_name": "fleetdm/fleet",
+    "description": "Open device management",
+    "ai_summary": "",
+    "url": "https://github.com/fleetdm/fleet"
+  },
+  "metallb/metallb": {
+    "full_name": "metallb/metallb",
+    "description": "A network load-balancer implementation for Kubernetes using standard routing protocols",
+    "ai_summary": "",
+    "url": "https://github.com/metallb/metallb"
+  },
+  "1Panel-dev/1Panel": {
+    "full_name": "1Panel-dev/1Panel",
+    "description": "🔥 1Panel provides an intuitive web interface and MCP Server to manage websites, files, containers, databases, and LLMs on a Linux server.",
+    "ai_summary": "",
+    "url": "https://github.com/1Panel-dev/1Panel"
+  },
+  "charmbracelet/bubbletea": {
+    "full_name": "charmbracelet/bubbletea",
+    "description": "A powerful little TUI framework 🏗",
+    "ai_summary": "",
+    "url": "https://github.com/charmbracelet/bubbletea"
+  },
+  "grafana/loki": {
+    "full_name": "grafana/loki",
+    "description": "Like Prometheus, but for logs.",
+    "ai_summary": "",
+    "url": "https://github.com/grafana/loki"
   }
 }
