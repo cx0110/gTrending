@@ -766,5 +766,149 @@
     "description": "Like Prometheus, but for logs.",
     "ai_summary": "",
     "url": "https://github.com/grafana/loki"
+  },
+  "patchy631/ai-engineering-hub": {
+    "full_name": "patchy631/ai-engineering-hub",
+    "description": "In-depth tutorials on LLMs, RAGs and real-world AI agent applications.",
+    "ai_summary": "",
+    "url": "https://github.com/patchy631/ai-engineering-hub"
+  },
+  "psviderski/uncloud": {
+    "full_name": "psviderski/uncloud",
+    "description": "A lightweight tool for deploying and managing containerised applications across a network of Docker hosts. Bridging the gap between Docker and Kubernetes ✨",
+    "ai_summary": "",
+    "url": "https://github.com/psviderski/uncloud"
+  },
+  "DevCaress/guia-entrevistas-de-programacion": {
+    "full_name": "DevCaress/guia-entrevistas-de-programacion",
+    "description": "无描述",
+    "ai_summary": "",
+    "url": "https://github.com/DevCaress/guia-entrevistas-de-programacion"
+  },
+  "sapientinc/HRM": {
+    "full_name": "sapientinc/HRM",
+    "description": "Hierarchical Reasoning Model Official Release",
+    "ai_summary": "",
+    "url": "https://github.com/sapientinc/HRM"
+  },
+  "projectdiscovery/nuclei-templates": {
+    "full_name": "projectdiscovery/nuclei-templates",
+    "description": "Community curated list of templates for the nuclei engine to find security vulnerabilities.",
+    "ai_summary": "",
+    "url": "https://github.com/projectdiscovery/nuclei-templates"
+  },
+  "paritytech/polkadot-sdk": {
+    "full_name": "paritytech/polkadot-sdk",
+    "description": "The Parity Polkadot Blockchain SDK",
+    "ai_summary": "",
+    "url": "https://github.com/paritytech/polkadot-sdk"
+  },
+  "anthropics/claude-quickstarts": {
+    "full_name": "anthropics/claude-quickstarts",
+    "description": "A collection of projects designed to help developers quickly get started with building deployable applications using the Claude API",
+    "ai_summary": "",
+    "url": "https://github.com/anthropics/claude-quickstarts"
+  },
+  "google/langextract": {
+    "full_name": "google/langextract",
+    "description": "A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.",
+    "ai_summary": "",
+    "url": "https://github.com/google/langextract"
+  },
+  "hesreallyhim/awesome-claude-code": {
+    "full_name": "hesreallyhim/awesome-claude-code",
+    "description": "A curated list of awesome commands, files, and workflows for Claude Code",
+    "ai_summary": "",
+    "url": "https://github.com/hesreallyhim/awesome-claude-code"
+  },
+  "pytorch/executorch": {
+    "full_name": "pytorch/executorch",
+    "description": "On-device AI across mobile, embedded and edge for PyTorch",
+    "ai_summary": "",
+    "url": "https://github.com/pytorch/executorch"
+  },
+  "topoteretes/cognee": {
+    "full_name": "topoteretes/cognee",
+    "description": "Memory for AI Agents in 6 lines of code",
+    "ai_summary": "",
+    "url": "https://github.com/topoteretes/cognee"
+  },
+  "qxresearch/qxresearch-event-1": {
+    "full_name": "qxresearch/qxresearch-event-1",
+    "description": "Python hands on tutorial with 50+ Python Application (10 lines of code) By @xiaowuc2",
+    "ai_summary": "",
+    "url": "https://github.com/qxresearch/qxresearch-event-1"
+  },
+  "m1k1o/neko": {
+    "full_name": "m1k1o/neko",
+    "description": "A self hosted virtual browser that runs in docker and uses WebRTC.",
+    "ai_summary": "",
+    "url": "https://github.com/m1k1o/neko"
+  },
+  "Tencent/WeKnora": {
+    "full_name": "Tencent/WeKnora",
+    "description": "LLM-powered framework for deep document understanding, semantic retrieval, and context-aware answers using RAG paradigm.",
+    "ai_summary": "",
+    "url": "https://github.com/Tencent/WeKnora"
+  },
+  "google/osv-scanner": {
+    "full_name": "google/osv-scanner",
+    "description": "Vulnerability scanner written in Go which uses the data provided by https://osv.dev",
+    "ai_summary": "",
+    "url": "https://github.com/google/osv-scanner"
+  },
+  "tesserato/CodeWeaver": {
+    "full_name": "tesserato/CodeWeaver",
+    "description": "Weave your codebase into a single, navigable Markdown document",
+    "ai_summary": "",
+    "url": "https://github.com/tesserato/CodeWeaver"
+  },
+  "opencontainers/image-spec": {
+    "full_name": "opencontainers/image-spec",
+    "description": "OCI Image Format",
+    "ai_summary": "",
+    "url": "https://github.com/opencontainers/image-spec"
+  },
+  "anchore/grype": {
+    "full_name": "anchore/grype",
+    "description": "A vulnerability scanner for container images and filesystems",
+    "ai_summary": "",
+    "url": "https://github.com/anchore/grype"
+  },
+  "hashicorp/terraform-provider-aws": {
+    "full_name": "hashicorp/terraform-provider-aws",
+    "description": "The AWS Provider enables Terraform to manage AWS resources.",
+    "ai_summary": "",
+    "url": "https://github.com/hashicorp/terraform-provider-aws"
+  },
+  "Adembc/lazyssh": {
+    "full_name": "Adembc/lazyssh",
+    "description": "A terminal-based SSH manager inspired by lazydocker and k9s - Written in go",
+    "ai_summary": "",
+    "url": "https://github.com/Adembc/lazyssh"
+  },
+  "open-telemetry/opentelemetry-collector-contrib": {
+    "full_name": "open-telemetry/opentelemetry-collector-contrib",
+    "description": "Contrib repository for the OpenTelemetry Collector",
+    "ai_summary": "",
+    "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib"
+  },
+  "docker/cagent": {
+    "full_name": "docker/cagent",
+    "description": "Agent Builder and Runtime by Docker Engineering",
+    "ai_summary": "",
+    "url": "https://github.com/docker/cagent"
+  },
+  "etcd-io/etcd": {
+    "full_name": "etcd-io/etcd",
+    "description": "Distributed reliable key-value store for the most critical data of a distributed system",
+    "ai_summary": "",
+    "url": "https://github.com/etcd-io/etcd"
+  },
+  "livekit/livekit": {
+    "full_name": "livekit/livekit",
+    "description": "End-to-end realtime stack for connecting humans and AI",
+    "ai_summary": "",
+    "url": "https://github.com/livekit/livekit"
   }
 }
