@@ -910,5 +910,119 @@
     "description": "End-to-end realtime stack for connecting humans and AI",
     "ai_summary": "",
     "url": "https://github.com/livekit/livekit"
+  },
+  "NVIDIA/cutile-python": {
+    "full_name": "NVIDIA/cutile-python",
+    "description": "cuTile is a programming model for writing parallel kernels for NVIDIA GPUs",
+    "ai_summary": "",
+    "url": "https://github.com/NVIDIA/cutile-python"
+  },
+  "BeehiveInnovations/pal-mcp-server": {
+    "full_name": "BeehiveInnovations/pal-mcp-server",
+    "description": "The power of Claude Code / GeminiCLI / CodexCLI + [Gemini / OpenAI / OpenRouter / Azure / Grok / Ollama / Custom Model / All Of The Above] working as one.",
+    "ai_summary": "",
+    "url": "https://github.com/BeehiveInnovations/pal-mcp-server"
+  },
+  "microsoft/Foundry-Local": {
+    "full_name": "microsoft/Foundry-Local",
+    "description": "无描述",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/Foundry-Local"
+  },
+  "blakeblackshear/frigate": {
+    "full_name": "blakeblackshear/frigate",
+    "description": "NVR with realtime local object detection for IP cameras",
+    "ai_summary": "",
+    "url": "https://github.com/blakeblackshear/frigate"
+  },
+  "lfnovo/open-notebook": {
+    "full_name": "lfnovo/open-notebook",
+    "description": "An Open Source implementation of Notebook LM with more flexibility and features",
+    "ai_summary": "",
+    "url": "https://github.com/lfnovo/open-notebook"
+  },
+  "activepieces/activepieces": {
+    "full_name": "activepieces/activepieces",
+    "description": "AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Agent with MCPs • AI Workflows & AI Agents • MCPs for AI Agents",
+    "ai_summary": "",
+    "url": "https://github.com/activepieces/activepieces"
+  },
+  "yt-dlp/yt-dlp": {
+    "full_name": "yt-dlp/yt-dlp",
+    "description": "A feature-rich command-line audio/video downloader",
+    "ai_summary": "",
+    "url": "https://github.com/yt-dlp/yt-dlp"
+  },
+  "Free-TV/IPTV": {
+    "full_name": "Free-TV/IPTV",
+    "description": "M3U Playlist for free TV channels",
+    "ai_summary": "",
+    "url": "https://github.com/Free-TV/IPTV"
+  },
+  "soxoj/maigret": {
+    "full_name": "soxoj/maigret",
+    "description": "🕵️‍♂️ Collect a dossier on a person by username from thousands of sites",
+    "ai_summary": "",
+    "url": "https://github.com/soxoj/maigret"
+  },
+  "DigitalPhonetics/IMS-Toucan": {
+    "full_name": "DigitalPhonetics/IMS-Toucan",
+    "description": "Controllable and fast Text-to-Speech for over 7000 languages!",
+    "ai_summary": "",
+    "url": "https://github.com/DigitalPhonetics/IMS-Toucan"
+  },
+  "SagerNet/sing-box": {
+    "full_name": "SagerNet/sing-box",
+    "description": "The universal proxy platform",
+    "ai_summary": "",
+    "url": "https://github.com/SagerNet/sing-box"
+  },
+  "fish2018/pansou": {
+    "full_name": "fish2018/pansou",
+    "description": "PanSou是一款高性能的网盘资源搜索API服务，支持TG频道和插件搜索。系统设计以性能和可扩展性为核心，支持多频道多插件并发搜索、结果智能排序和网盘类型分类。docker集成前后端，一键启动，开箱即用。 https://so.252035.xyz/",
+    "ai_summary": "",
+    "url": "https://github.com/fish2018/pansou"
+  },
+  "base/node": {
+    "full_name": "base/node",
+    "description": "Everything required to run your own Base node",
+    "ai_summary": "",
+    "url": "https://github.com/base/node"
+  },
+  "zitadel/zitadel": {
+    "full_name": "zitadel/zitadel",
+    "description": "ZITADEL - Identity infrastructure, simplified for you.",
+    "ai_summary": "",
+    "url": "https://github.com/zitadel/zitadel"
+  },
+  "syncthing/syncthing": {
+    "full_name": "syncthing/syncthing",
+    "description": "Open Source Continuous File Synchronization",
+    "ai_summary": "",
+    "url": "https://github.com/syncthing/syncthing"
+  },
+  "weaviate/weaviate": {
+    "full_name": "weaviate/weaviate",
+    "description": "Weaviate is an open-source vector database that stores both objects and vectors, allowing for the combination of vector search with structured filtering with the fault tolerance and scalability of a cloud-native database​.",
+    "ai_summary": "",
+    "url": "https://github.com/weaviate/weaviate"
+  },
+  "gofiber/fiber": {
+    "full_name": "gofiber/fiber",
+    "description": "⚡️ Express inspired web framework written in Go",
+    "ai_summary": "",
+    "url": "https://github.com/gofiber/fiber"
+  },
+  "junegunn/fzf": {
+    "full_name": "junegunn/fzf",
+    "description": "🌸 A command-line fuzzy finder",
+    "ai_summary": "",
+    "url": "https://github.com/junegunn/fzf"
+  },
+  "AlistGo/alist": {
+    "full_name": "AlistGo/alist",
+    "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
+    "ai_summary": "",
+    "url": "https://github.com/AlistGo/alist"
   }
 }
