@@ -1024,5 +1024,119 @@
     "description": "🗂️A file list/WebDAV program that supports multiple storages, powered by Gin and Solidjs. / 一个支持多存储的文件列表/WebDAV程序，使用 Gin 和 Solidjs。",
     "ai_summary": "",
     "url": "https://github.com/AlistGo/alist"
+  },
+  "winapps-org/winapps": {
+    "full_name": "winapps-org/winapps",
+    "description": "Run Windows apps such as Microsoft Office/Adobe in Linux (Ubuntu/Fedora) and GNOME/KDE as if they were a part of the native OS, including Nautilus integration. Hard fork of https://github.com/Fmstrat/winapps/",
+    "ai_summary": "",
+    "url": "https://github.com/winapps-org/winapps"
+  },
+  "slidevjs/slidev": {
+    "full_name": "slidevjs/slidev",
+    "description": "Presentation Slides for Developers",
+    "ai_summary": "",
+    "url": "https://github.com/slidevjs/slidev"
+  },
+  "cloudflare/vibesdk": {
+    "full_name": "cloudflare/vibesdk",
+    "description": "An open-source vibe coding platform that helps you build your own vibe-coding platform, built entirely on Cloudflare stack",
+    "ai_summary": "",
+    "url": "https://github.com/cloudflare/vibesdk"
+  },
+  "Comfy-Org/ComfyUI-Manager": {
+    "full_name": "Comfy-Org/ComfyUI-Manager",
+    "description": "ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. It offers management functions to install, remove, disable, and enable various custom nodes of ComfyUI. Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI.",
+    "ai_summary": "",
+    "url": "https://github.com/Comfy-Org/ComfyUI-Manager"
+  },
+  "mealie-recipes/mealie": {
+    "full_name": "mealie-recipes/mealie",
+    "description": "Mealie is a self hosted recipe manager and meal planner with a RestAPI backend and a reactive frontend application built in Vue for a pleasant user experience for the whole family. Easily add recipes into your database by providing the url and mealie will automatically import the relevant data or add a family recipe with the UI editor",
+    "ai_summary": "",
+    "url": "https://github.com/mealie-recipes/mealie"
+  },
+  "safing/portmaster": {
+    "full_name": "safing/portmaster",
+    "description": "🏔 Love Freedom - ❌ Block Mass Surveillance",
+    "ai_summary": "",
+    "url": "https://github.com/safing/portmaster"
+  },
+  "XTLS/Xray-core": {
+    "full_name": "XTLS/Xray-core",
+    "description": "Xray, Penetrates Everything. Also the best v2ray-core. Where the magic happens. An open platform for various uses.",
+    "ai_summary": "",
+    "url": "https://github.com/XTLS/Xray-core"
+  },
+  "filebrowser/filebrowser": {
+    "full_name": "filebrowser/filebrowser",
+    "description": "📂 Web File Browser",
+    "ai_summary": "",
+    "url": "https://github.com/filebrowser/filebrowser"
+  },
+  "inngest/inngest": {
+    "full_name": "inngest/inngest",
+    "description": "The leading workflow orchestration platform. Run stateful step functions and AI workflows on serverless, servers, or the edge.",
+    "ai_summary": "",
+    "url": "https://github.com/inngest/inngest"
+  },
+  "jorgerojas26/lazysql": {
+    "full_name": "jorgerojas26/lazysql",
+    "description": "A cross-platform TUI database management tool written in Go.",
+    "ai_summary": "",
+    "url": "https://github.com/jorgerojas26/lazysql"
+  },
+  "nezhahq/nezha": {
+    "full_name": "nezhahq/nezha",
+    "description": "Self-hosted, lightweight server and website monitoring and O&M tool",
+    "ai_summary": "",
+    "url": "https://github.com/nezhahq/nezha"
+  },
+  "v2fly/domain-list-community": {
+    "full_name": "v2fly/domain-list-community",
+    "description": "Community managed domain list. Generate geosite.dat for V2Ray.",
+    "ai_summary": "",
+    "url": "https://github.com/v2fly/domain-list-community"
+  },
+  "AdguardTeam/AdGuardHome": {
+    "full_name": "AdguardTeam/AdGuardHome",
+    "description": "Network-wide ads & trackers blocking DNS server",
+    "ai_summary": "",
+    "url": "https://github.com/AdguardTeam/AdGuardHome"
+  },
+  "Jguer/yay": {
+    "full_name": "Jguer/yay",
+    "description": "Yet another Yogurt - An AUR Helper written in Go",
+    "ai_summary": "",
+    "url": "https://github.com/Jguer/yay"
+  },
+  "github/github-mcp-server": {
+    "full_name": "github/github-mcp-server",
+    "description": "GitHub's official MCP Server",
+    "ai_summary": "",
+    "url": "https://github.com/github/github-mcp-server"
+  },
+  "vmware-tanzu/velero": {
+    "full_name": "vmware-tanzu/velero",
+    "description": "Backup and migrate Kubernetes applications and their persistent volumes",
+    "ai_summary": "",
+    "url": "https://github.com/vmware-tanzu/velero"
+  },
+  "moby/buildkit": {
+    "full_name": "moby/buildkit",
+    "description": "concurrent, cache-efficient, and Dockerfile-agnostic builder toolkit",
+    "ai_summary": "",
+    "url": "https://github.com/moby/buildkit"
+  },
+  "heroiclabs/nakama": {
+    "full_name": "heroiclabs/nakama",
+    "description": "Distributed server for social and realtime games and apps.",
+    "ai_summary": "",
+    "url": "https://github.com/heroiclabs/nakama"
+  },
+  "trustwallet/assets": {
+    "full_name": "trustwallet/assets",
+    "description": "A comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.",
+    "ai_summary": "",
+    "url": "https://github.com/trustwallet/assets"
   }
 }
