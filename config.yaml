@@ -1,0 +1,27 @@
+settings:
+  enable_llm: false
+  # 列表限制：每个分类只抓取前 N 个 (GitHub Trending 一页通常 25 个)
+  top_list_limit: 10
+  # AI 模型: 推荐 Groq 的 llama-3.3-70b-versatile 或 gpt-4o-mini
+  ai_model: "llama-3.3-70b-versatile"
+  
+  history_file: "data/history.json"
+  archive_dir: "archives"
+  readme_file: "README.md"
+  readme_header: |
+    # 📈 GitHub Trending 每日追踪
+    
+    自动抓取 GitHub 官方热榜，由 AI 辅助生成中文摘要。
+    
+    > 更新时间: {{ update_time }}
+
+# 定义你要抓取的页面
+collections:
+  - title: "🔥 全球热榜 (General)"
+    url: "https://github.com/trending"
+    
+  - title: "🐍 Python 热门"
+    url: "https://github.com/trending/python?since=daily"
+
+  - title: "🐹 Go 语言热门"
+    url: "https://github.com/trending/go?since=daily"
