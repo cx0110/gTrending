@@ -1,9 +1,9 @@
 import os
-import json
 import yaml
 import time
 import requests
 import datetime
+import sqlite3
 from bs4 import BeautifulSoup
 from openai import OpenAI
 
@@ -21,20 +21,41 @@ def load_config():
         config['settings']['enable_llm'] = (env_enable_llm.lower() == 'true')
     return config
 
-# === 2. 历史缓存 (去重核心) ===
-def load_history(filepath):
-    if not os.path.exists(filepath):
-        return {}
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            return json.load(f)
-    except:
-        return {}
+# === 2. 数据库管理 (SQLite) ===
+DB_PATH = "data/history.db"
 
-def save_history(filepath, history):
-    os.makedirs(os.path.dirname(filepath), exist_ok=True)
-    with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump(history, f, ensure_ascii=False, indent=2)
+def init_db():
+    """初始化数据库表"""
+    os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
+    with sqlite3.connect(DB_PATH) as conn:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS project_history (
+                name TEXT PRIMARY KEY,
+                summary TEXT,
+                updated_at TEXT
+            )
+        """)
+        conn.execute("CREATE INDEX IF NOT EXISTS idx_name ON project_history (name)")
+
+def get_cached_summary(name):
+    """从数据库查询摘要"""
+    if not os.path.exists(DB_PATH):
+        return None
+    
+    with sqlite3.connect(DB_PATH) as conn:
+        cursor = conn.execute("SELECT summary FROM project_history WHERE name = ?", (name,))
+        row = cursor.fetchone()
+        return row[0] if row else None
+
+def save_cached_summary(name, summary):
+    """保存摘要到数据库"""
+    today = datetime.datetime.now().strftime("%Y-%m-%d")
+    with sqlite3.connect(DB_PATH) as conn:
+        # 使用 REPLACE INTO，如果存在则更新，不存在则插入
+        conn.execute("""
+            REPLACE INTO project_history (name, summary, updated_at) 
+            VALUES (?, ?, ?)
+        """, (name, summary, today))
 
 # === 3. 爬虫逻辑 (BeautifulSoup) ===
 def scrape_github_trending(url, limit=10):
@@ -73,7 +94,6 @@ def scrape_github_trending(url, limit=10):
                 description = p_desc.text.strip() if p_desc else "无描述"
                 
                 # 3. 获取 Stars (粗略获取当日新增或总星数)
-                # GitHub Trending 页面结构经常变，这里取最显著的数字
                 stars_elem = item.select_one('a[href$="/stargazers"]')
                 stars = stars_elem.text.strip() if stars_elem else "N/A"
                 
@@ -121,8 +141,8 @@ def generate_ai_summary(client, repo, model_name):
         print(f"⚠️ AI 接口错误: {e}")
         return ""
 
-# === 5. Markdown 构建 ===
-def build_section(title, repos, settings, history, llm_client):
+# === 5. Markdown 构建 (集成 SQLite) ===
+def build_section(title, repos, settings, llm_client):
     section = f"## {title}\n\n"
     section += "| 排名 | 项目 | Stars | 简介 (AI/Raw) |\n"
     section += "| :--- | :--- | :--- | :--- |\n"
@@ -137,19 +157,19 @@ def build_section(title, repos, settings, history, llm_client):
         
         # AI 逻辑
         if settings['enable_llm']:
-            if name in history:
-                # 命中缓存
-                final_desc = f"🤖 {history[name]['summary']}"
+            # 1. 尝试从 SQLite 查缓存
+            cached_summary = get_cached_summary(name)
+            
+            if cached_summary:
+                final_desc = f"🤖 {cached_summary}"
+            
+            # 2. 如果没缓存，且有 Client，则生成并保存
             elif llm_client:
-                # 调用 AI
                 ai_sum = generate_ai_summary(llm_client, repo, settings.get('ai_model', 'gpt-3.5-turbo'))
                 if ai_sum:
                     final_desc = f"🤖 {ai_sum}"
-                    # 写入缓存
-                    history[name] = {
-                        "summary": ai_sum,
-                        "updated_at": datetime.datetime.now().strftime("%Y-%m-%d")
-                    }
+                    # 写入 SQLite
+                    save_cached_summary(name, ai_sum)
         
         # 截断长文本
         if len(final_desc) > 150:
@@ -175,7 +195,9 @@ def get_archive_list(archive_dir):
 def main():
     config = load_config()
     settings = config['settings']
-    history = load_history(settings['history_file'])
+    
+    # 初始化数据库
+    init_db()
     
     # 初始化 AI 客户端
     llm_client = None
@@ -197,7 +219,7 @@ def main():
         repos = scrape_github_trending(item['url'], limit=limit)
         
         if repos:
-            section_md = build_section(item['title'], repos, settings, history, llm_client)
+            section_md = build_section(item['title'], repos, settings, llm_client)
             report_content += section_md + "\n"
         
         time.sleep(2) # 防封 IP 延迟
@@ -212,14 +234,12 @@ def main():
     # 更新 README (头部 + 归档列表)
     archive_list = get_archive_list(archive_dir)
     history_section = "\n## 🗂 历史归档 (Archives)\n\n| 日期 | 链接 |\n| :--- | :--- |\n"
-    history_section += "\n".join(archive_list[:14]) # 显示最近14天
+    # 仅显示最近 14 条
+    history_section += "\n".join(archive_list[:14]) 
     
     with open(settings['readme_file'], "w", encoding="utf-8") as f:
         f.write(report_content + history_section)
     print("✅ README 已更新")
-
-    # 保存缓存
-    save_history(settings['history_file'], history)
 
 if __name__ == "__main__":
     main()
