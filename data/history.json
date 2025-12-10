@@ -1,0 +1,98 @@
+{
+  "KaijuEngine/kaiju": {
+    "summary": "KaijuEngine是一个使用Go语言和Vulkan开发的通用3D和2D游戏引擎，内置编辑器。",
+    "updated_at": "2025-12-10"
+  },
+  "thedotmack/claude-mem": {
+    "summary": "该项目是一个Claude代码插件，能够自动捕获和记录编码过程，并使用AI压缩和注入相关上下文到未来编码会话中。",
+    "updated_at": "2025-12-10"
+  },
+  "dyad-sh/dyad": {
+    "summary": "该项目是一个免费、开源的本地人工智能应用构建工具。",
+    "updated_at": "2025-12-10"
+  },
+  "microsoft/VibeVoice": {
+    "summary": "Microsoft/VibeVoice是一个开源的前沿语音人工智能项目，旨在提供高级语音识别、合成和处理能力。",
+    "updated_at": "2025-12-10"
+  },
+  "NVIDIA/cutile-python": {
+    "summary": "cuTile是一个用于编写NVIDIA GPU并行内核的编程模型。",
+    "updated_at": "2025-12-10"
+  },
+  "google/adk-samples": {
+    "summary": "该项目提供了一组使用Agent Development Kit（ADK）构建的示例代理程序。",
+    "updated_at": "2025-12-10"
+  },
+  "patchy631/ai-engineering-hub": {
+    "summary": "该项目提供了关于大语言模型（LLMs）、检索增强生成（RAGs）和现实世界人工智能代理应用的深入教程。",
+    "updated_at": "2025-12-10"
+  },
+  "zhu-xlab/GlobalBuildingAtlas": {
+    "summary": "该项目提供了一个全球建筑物的数据集和工具，用于创建和管理建筑物信息。",
+    "updated_at": "2025-12-10"
+  },
+  "666ghj/BettaFish": {
+    "summary": "微舆是一个多Agent舆情分析助手，能够打破信息茧房，预测未来走向，辅助决策。",
+    "updated_at": "2025-12-10"
+  },
+  "microsoft/generative-ai-for-beginners": {
+    "summary": "该项目提供21个课程，帮助初学者入门并开始构建基于生成式人工智能的应用。",
+    "updated_at": "2025-12-10"
+  },
+  "srbhr/Resume-Matcher": {
+    "summary": "Resume Matcher是一个帮助用户优化简历的工具，提供关键词建议和简历与职位描述的匹配度分析。",
+    "updated_at": "2025-12-10"
+  },
+  "anthropics/claude-quickstarts": {
+    "summary": "该项目提供了一系列快速入门项目，帮助开发者快速使用Claude API构建和部署应用。",
+    "updated_at": "2025-12-10"
+  },
+  "commaai/openpilot": {
+    "summary": "openpilot是一个机器人操作系统，主要用于升级300多款支持的汽车的驾驶辅助系统。",
+    "updated_at": "2025-12-10"
+  },
+  "infiniflow/ragflow": {
+    "summary": "RAGFlow是一个开源的检索增强生成（RAG）引擎，融合了先进的RAG技术和智能代理能力，为大型语言模型（LLM）创建了一个更好的上下文层。",
+    "updated_at": "2025-12-10"
+  },
+  "virattt/ai-hedge-fund": {
+    "summary": "该项目是一个使用人工智能技术的对冲基金团队，旨在通过AI算法进行投资决策和风险管理。",
+    "updated_at": "2025-12-10"
+  },
+  "prometheus-operator/prometheus-operator": {
+    "summary": "Prometheus Operator 项目在 Kubernetes 上创建、配置和管理 Prometheus 集群。",
+    "updated_at": "2025-12-10"
+  },
+  "aquasecurity/trivy": {
+    "summary": "Trivy是一个开源工具，用于扫描容器、Kubernetes、代码仓库、云平台等，检测漏洞、配置错误、秘密信息和软件库依赖。",
+    "updated_at": "2025-12-10"
+  },
+  "moby/buildkit": {
+    "summary": "Moby/BuildKit是一个并发、缓存高效、与Dockerfile无关的构建工具包。",
+    "updated_at": "2025-12-10"
+  },
+  "inngest/inngest": {
+    "summary": "Inngest是一个工作流编排平台，允许用户在无服务器、服务器或边缘环境中运行有状态的步骤函数和AI工作流。",
+    "updated_at": "2025-12-10"
+  },
+  "docker/compose": {
+    "summary": "该项目允许用户定义和运行多容器的Docker应用程序。",
+    "updated_at": "2025-12-10"
+  },
+  "AdguardTeam/AdGuardHome": {
+    "summary": "该项目是一个网络范围内的广告和跟踪器拦截DNS服务器。",
+    "updated_at": "2025-12-10"
+  },
+  "nats-io/nats-server": {
+    "summary": "NATS服务器是一个高性能的消息系统服务器，用于云端和边缘计算的消息传递和通信。",
+    "updated_at": "2025-12-10"
+  },
+  "projectdiscovery/nuclei": {
+    "summary": "Nuclei是一个快速、可定制的漏洞扫描器，通过基于YAML的DSL语言，帮助用户发现应用、API、网络、DNS和云配置中的漏洞。",
+    "updated_at": "2025-12-10"
+  },
+  "qualifire-dev/rogue": {
+    "summary": "该项目是一个测试框架，旨在简化代理程序的测试过程。",
+    "updated_at": "2025-12-10"
+  }
+}
