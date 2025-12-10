@@ -1138,5 +1138,149 @@
     "description": "A comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.",
     "ai_summary": "",
     "url": "https://github.com/trustwallet/assets"
+  },
+  "KaijuEngine/kaiju": {
+    "full_name": "KaijuEngine/kaiju",
+    "description": "General purpose 3D and 2D game engine using Go (golang) and Vulkan with built in editor",
+    "ai_summary": "",
+    "url": "https://github.com/KaijuEngine/kaiju"
+  },
+  "thedotmack/claude-mem": {
+    "full_name": "thedotmack/claude-mem",
+    "description": "A Claude Code plugin that automatically captures everything Claude does during your coding sessions, compresses it with AI (using Claude's agent-sdk), and injects relevant context back into future sessions.",
+    "ai_summary": "",
+    "url": "https://github.com/thedotmack/claude-mem"
+  },
+  "dyad-sh/dyad": {
+    "full_name": "dyad-sh/dyad",
+    "description": "Free, local, open-source AI app builder ✨ v0 / lovable / Bolt alternative 🌟 Star if you like it!",
+    "ai_summary": "",
+    "url": "https://github.com/dyad-sh/dyad"
+  },
+  "google/adk-samples": {
+    "full_name": "google/adk-samples",
+    "description": "A collection of sample agents built with Agent Development Kit (ADK)",
+    "ai_summary": "",
+    "url": "https://github.com/google/adk-samples"
+  },
+  "microsoft/generative-ai-for-beginners": {
+    "full_name": "microsoft/generative-ai-for-beginners",
+    "description": "21 Lessons, Get Started Building with Generative AI",
+    "ai_summary": "",
+    "url": "https://github.com/microsoft/generative-ai-for-beginners"
+  },
+  "srbhr/Resume-Matcher": {
+    "full_name": "srbhr/Resume-Matcher",
+    "description": "Improve your resumes with Resume Matcher. Get insights, keyword suggestions and tune your resumes to job descriptions.",
+    "ai_summary": "",
+    "url": "https://github.com/srbhr/Resume-Matcher"
+  },
+  "Johnshall/Shadowrocket-ADBlock-Rules-Forever": {
+    "full_name": "Johnshall/Shadowrocket-ADBlock-Rules-Forever",
+    "description": "提供多款 Shadowrocket 规则，拥有强劲的广告过滤功能。每日 8 时重新构建规则。",
+    "ai_summary": "",
+    "url": "https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever"
+  },
+  "commaai/openpilot": {
+    "full_name": "commaai/openpilot",
+    "description": "openpilot is an operating system for robotics. Currently, it upgrades the driver assistance system on 300+ supported cars.",
+    "ai_summary": "",
+    "url": "https://github.com/commaai/openpilot"
+  },
+  "infiniflow/ragflow": {
+    "full_name": "infiniflow/ragflow",
+    "description": "RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs",
+    "ai_summary": "",
+    "url": "https://github.com/infiniflow/ragflow"
+  },
+  "virattt/ai-hedge-fund": {
+    "full_name": "virattt/ai-hedge-fund",
+    "description": "An AI Hedge Fund Team",
+    "ai_summary": "",
+    "url": "https://github.com/virattt/ai-hedge-fund"
+  },
+  "wasserth/TotalSegmentator": {
+    "full_name": "wasserth/TotalSegmentator",
+    "description": "Tool for robust segmentation of >100 important anatomical structures in CT and MR images",
+    "ai_summary": "",
+    "url": "https://github.com/wasserth/TotalSegmentator"
+  },
+  "OpenHands/OpenHands": {
+    "full_name": "OpenHands/OpenHands",
+    "description": "🙌 OpenHands: AI-Driven Development",
+    "ai_summary": "",
+    "url": "https://github.com/OpenHands/OpenHands"
+  },
+  "CVHub520/X-AnyLabeling": {
+    "full_name": "CVHub520/X-AnyLabeling",
+    "description": "Effortless data labeling with AI support from Segment Anything and other awesome models.",
+    "ai_summary": "",
+    "url": "https://github.com/CVHub520/X-AnyLabeling"
+  },
+  "modelscope/DiffSynth-Studio": {
+    "full_name": "modelscope/DiffSynth-Studio",
+    "description": "Enjoy the magic of Diffusion models!",
+    "ai_summary": "",
+    "url": "https://github.com/modelscope/DiffSynth-Studio"
+  },
+  "prometheus-operator/prometheus-operator": {
+    "full_name": "prometheus-operator/prometheus-operator",
+    "description": "Prometheus Operator creates/configures/manages Prometheus clusters atop Kubernetes",
+    "ai_summary": "",
+    "url": "https://github.com/prometheus-operator/prometheus-operator"
+  },
+  "docker/compose": {
+    "full_name": "docker/compose",
+    "description": "Define and run multi-container applications with Docker",
+    "ai_summary": "",
+    "url": "https://github.com/docker/compose"
+  },
+  "qualifire-dev/rogue": {
+    "full_name": "qualifire-dev/rogue",
+    "description": "Agents testing framework made easy",
+    "ai_summary": "",
+    "url": "https://github.com/qualifire-dev/rogue"
+  },
+  "anchore/syft": {
+    "full_name": "anchore/syft",
+    "description": "CLI tool and library for generating a Software Bill of Materials from container images and filesystems",
+    "ai_summary": "",
+    "url": "https://github.com/anchore/syft"
+  },
+  "tidwall/gjson": {
+    "full_name": "tidwall/gjson",
+    "description": "Get JSON values quickly - JSON parser for Go",
+    "ai_summary": "",
+    "url": "https://github.com/tidwall/gjson"
+  },
+  "kubernetes-sigs/gateway-api": {
+    "full_name": "kubernetes-sigs/gateway-api",
+    "description": "Repository for the next iteration of composite service (e.g. Ingress) and load balancing APIs.",
+    "ai_summary": "",
+    "url": "https://github.com/kubernetes-sigs/gateway-api"
+  },
+  "google/go-containerregistry": {
+    "full_name": "google/go-containerregistry",
+    "description": "Go library and CLIs for working with container registries",
+    "ai_summary": "",
+    "url": "https://github.com/google/go-containerregistry"
+  },
+  "siderolabs/talos": {
+    "full_name": "siderolabs/talos",
+    "description": "Talos Linux is a modern Linux distribution built for Kubernetes.",
+    "ai_summary": "",
+    "url": "https://github.com/siderolabs/talos"
+  },
+  "projectdiscovery/subfinder": {
+    "full_name": "projectdiscovery/subfinder",
+    "description": "Fast passive subdomain enumeration tool.",
+    "ai_summary": "",
+    "url": "https://github.com/projectdiscovery/subfinder"
+  },
+  "kedacore/keda": {
+    "full_name": "kedacore/keda",
+    "description": "KEDA is a Kubernetes-based Event Driven Autoscaling component. It provides event driven scale for any container running in Kubernetes",
+    "ai_summary": "",
+    "url": "https://github.com/kedacore/keda"
   }
 }
