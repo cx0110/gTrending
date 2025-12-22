@@ -19,9 +19,9 @@ settings:
 collections:
   - title: "🔥 全球热榜 (General)"
     url: "https://github.com/trending"
-    
-  - title: "🐍 Python 热门"
-    url: "https://github.com/trending/python?since=daily"
 
   - title: "🐹 Go 语言热门"
     url: "https://github.com/trending/go?since=daily"
+        
+  - title: "🐍 Python 热门"
+    url: "https://github.com/trending/python?since=daily"
