@@ -78,3 +78,66 @@ jobs:
           # 警告：这个文件夹内的旧内容会被 source-directory 的内容完全覆盖/同步
           # 所以必须指定一个专属的子文件夹，不要直接填 00_Inbox，否则 Inbox 其他文件会被删！
           target-directory: '90_Archives/Tech_News/Github'
+          # === 修改部分：推送到博客 (创建模式) ===
+      - name: Create Post in Hugo Blog
+        env:
+          BLOG_REPO_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+          BLOG_REPO: ${{ vars.BLOG_REPO }}
+        run: |
+          TODAY=$(date +'%Y-%m-%d')
+          # 设定统一的文件夹名称，Repo B 也要用这个
+          POST_DIR="content/post/${TODAY}-daily-news"
+          
+          # 1. Clone 博客仓库
+          git clone --depth 1 https://x-access-token:${BLOG_REPO_TOKEN}@github.com/${BLOG_REPO}.git blog
+          
+          # 2. 创建目录
+          mkdir -p "blog/${POST_DIR}"
+          TARGET_FILE="blog/${POST_DIR}/index.md"
+          
+          # 3. 写入 Front Matter (覆盖模式，因为它是第一个运行的)
+          cat > "$TARGET_FILE" << EOF
+          ---
+          title: "🔥 每日技术热点 ${TODAY}"
+          subtitle: "GitHub Trending & 技术动态"
+          summary: "今日热门开源项目与技术资讯汇总"
+          authors:
+            - admin
+          tags:
+            - GitHub
+            - Trending
+            - 技术热点
+          categories:
+            - 每日热点
+          date: ${TODAY}T09:00:00+08:00
+          lastmod: ${TODAY}T09:00:00+08:00
+          featured: false
+          draft: false
+          image:
+            caption: ""
+            focal_point: "Smart"
+          ---
+          
+          ## 📈 GitHub Trending
+          
+          EOF
+          
+          # 4. 追加 Repo A 的内容 (去掉第一行标题，防止重复)
+          if [ -f "archives/${TODAY}.md" ]; then
+            sed '1{/^#/d;}' "archives/${TODAY}.md" >> "$TARGET_FILE"
+          else
+            sed '1{/^#/d;}' README.md >> "$TARGET_FILE"
+          fi
+          
+          # 5. 推送
+          cd blog
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          
+          if git diff --staged --quiet; then
+            echo "No changes"
+          else
+            git commit -m "📰 Create Daily: ${TODAY}"
+            git push
+          fi
