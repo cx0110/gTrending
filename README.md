@@ -2,53 +2,53 @@
 
 自动抓取 GitHub 官方热榜，由 AI 辅助生成中文摘要。
 
-> 更新时间: 2025-12-24 00:42 UTC
+> 更新时间: 2025-12-24 17:22 UTC
 
 
 ## 🔥 全球热榜 (General)
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [rendercv/rendercv](https://github.com/rendercv/rendercv) | 6,866 | 🤖 RenderCV是一个基于Typst的在线简历/CV生成工具，专为学术和工程领域的专业人士设计。 |
-| 2 | [exo-explore/exo](https://github.com/exo-explore/exo) | 37,880 | 🤖 该项目允许用户使用日常设备（如手机、电脑、手表等）在家中搭建和运行自己的AI集群。 |
-| 3 | [google/langextract](https://github.com/google/langextract) | 18,639 | 🤖 该项目是一个Python库，利用大语言模型（LLMs）从无结构文本中提取结构化信息，并提供精确的源基准和交互式可视化功能。 |
-| 4 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 5,439 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
-| 5 | [safety-research/bloom](https://github.com/safety-research/bloom) | 556 | 🤖 该项目"Bloom"的核心功能是能够立即评估任何行为。 |
-| 6 | [stan-smith/FossFLOW](https://github.com/stan-smith/FossFLOW) | 14,532 | 🤖 该项目允许用户创建美观的等轴测基础设施图表。 |
-| 7 | [vendure-ecommerce/vendure](https://github.com/vendure-ecommerce/vendure) | 7,092 | 🤖 Vendure是一个使用TypeScript、NestJS和GraphQL构建的高度可定制的电子商务平台。 |
-| 8 | [cloudcommunity/Free-Certifications](https://github.com/cloudcommunity/Free-Certifications) | 48,432 | 🤖 该项目提供一个免费的在线课程和认证列表，供用户学习和获取认证。 |
-| 9 | [open-webui/open-webui](https://github.com/open-webui/open-webui) | 118,667 | 🤖 该项目是一个用户友好的AI接口，支持多种AI模型和API，如Ollama和OpenAI API。 |
-| 10 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 13,339 | 🤖 该项目是一个命令行工具，用于配置和监控Claude Code。 |
+| 1 | [rendercv/rendercv](https://github.com/rendercv/rendercv) | 8,577 | 🤖 RenderCV是一个基于Typst的在线简历/CV生成工具，专为学术和工程领域的专业人士设计。 |
+| 2 | [twitter/the-algorithm](https://github.com/twitter/the-algorithm) | 68,466 | 🤖 该项目是Twitter的X推荐算法的源代码。 |
+| 3 | [google/langextract](https://github.com/google/langextract) | 18,987 | 🤖 该项目是一个Python库，利用大语言模型（LLMs）从无结构文本中提取结构化信息，并提供精确的源基准和交互式可视化功能。 |
+| 4 | [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni) | 1,547 | 🤖 该项目是一个用于高效推理的多模态模型框架。 |
+| 5 | [stan-smith/FossFLOW](https://github.com/stan-smith/FossFLOW) | 14,863 | 🤖 该项目允许用户创建美观的等轴测基础设施图表。 |
+| 6 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 13,573 | 🤖 该项目是一个命令行工具，用于配置和监控Claude Code。 |
+| 7 | [safety-research/bloom](https://github.com/safety-research/bloom) | 706 | 🤖 该项目"Bloom"的核心功能是能够立即评估任何行为。 |
+| 8 | [makeplane/plane](https://github.com/makeplane/plane) | 41,343 | 🤖 Plane是一个开源的项目管理工具，帮助用户跟踪问题、史诗和周期。 |
+| 9 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 5,741 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
+| 10 | [danielmiessler/Fabric](https://github.com/danielmiessler/Fabric) | 36,465 | 🤖 Fabric 是一个开源框架，利用人工智能来增强人类的能力，通过众包的方式提供模块化的解决方案。 |
 
 ## 🐹 Go 语言热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [open-telemetry/opentelemetry-collector-contrib](https://github.com/open-telemetry/opentelemetry-collector-contrib) | 4,256 | 🤖 OpenTelemetry Collector 的贡献仓库，用于收集和处理遥测数据。 |
-| 2 | [danielmiessler/Fabric](https://github.com/danielmiessler/Fabric) | 36,310 | 🤖 Fabric 是一个开源框架，利用人工智能来增强人类的能力，通过众包的方式提供模块化的解决方案。 |
-| 3 | [mudler/LocalAI](https://github.com/mudler/LocalAI) | 40,639 | 🤖 Mudler/LocalAI是一个免费、开源的本地人工智能项目，能够在不需要GPU的消费级硬件上运行，支持文本、音频、视频、图像、语音克隆等功能。 |
-| 4 | [qdm12/gluetun](https://github.com/qdm12/gluetun) | 12,141 | 🤖 该项目是一个使用Go语言编写的VPN客户端，支持多个VPN服务提供商，集成了OpenVPN、Wireguard、DNS over TLS和内置代理服务器等功能。 |
-| 5 | [qualifire-dev/rogue](https://github.com/qualifire-dev/rogue) | 648 | 🤖 该项目是一个智能代理测试框架，旨在简化代理测试流程。 |
-| 6 | [etcd-io/etcd](https://github.com/etcd-io/etcd) | 51,057 | 🤖 etcd 是一个分布式的可靠键值存储系统，用于存储分布式系统中最关键的数据。 |
-| 7 | [heroiclabs/nakama](https://github.com/heroiclabs/nakama) | 11,954 | 🤖 该项目是一个分布式服务器，用于支持社交和实时游戏及应用的开发。 |
-| 8 | [5rahim/seanime](https://github.com/5rahim/seanime) | 1,351 | 🤖 该项目是一个开源的媒体服务器，具有网页界面和桌面应用，用于管理和播放动漫和漫画。 |
-| 9 | [evilmartians/lefthook](https://github.com/evilmartians/lefthook) | 7,168 | 🤖 该项目是一个快速且强大的Git钩子管理器，适用于任何类型的项目。 |
-| 10 | [kedacore/keda](https://github.com/kedacore/keda) | 9,767 | 🤖 KEDA是一个基于Kubernetes的事件驱动自动扩缩组件，用于根据事件动态调整容器的规模。 |
+| 1 | [danielmiessler/Fabric](https://github.com/danielmiessler/Fabric) | 36,465 | 🤖 Fabric 是一个开源框架，利用人工智能来增强人类的能力，通过众包的方式提供模块化的解决方案。 |
+| 2 | [etcd-io/etcd](https://github.com/etcd-io/etcd) | 51,092 | 🤖 etcd 是一个分布式的可靠键值存储系统，用于存储分布式系统中最关键的数据。 |
+| 3 | [mudler/LocalAI](https://github.com/mudler/LocalAI) | 40,679 | 🤖 Mudler/LocalAI是一个免费、开源的本地人工智能项目，能够在不需要GPU的消费级硬件上运行，支持文本、音频、视频、图像、语音克隆等功能。 |
+| 4 | [rclone/rclone](https://github.com/rclone/rclone) | 54,597 | 🤖 rclone是一个命令行程序，用于在云存储服务（如Google Drive、S3、Dropbox等）之间同步和备份文件。 |
+| 5 | [siderolabs/talos](https://github.com/siderolabs/talos) | 9,480 | 🤖 Talos Linux是一个为Kubernetes而设计的现代Linux发行版。 |
+| 6 | [seaweedfs/seaweedfs](https://github.com/seaweedfs/seaweedfs) | 29,062 | 🤖 SeaweedFS是一个分布式存储系统，支持高性能的对象、文件和数据湖存储，具有O(1)磁盘寻址、云分层存储、多种协议支持等特点。 |
+| 7 | [XTLS/Xray-core](https://github.com/XTLS/Xray-core) | 33,641 | 🤖 XTLS/Xray-core是一个开源平台，提供了一个强大的核心功能，用于实现各种网络代理和穿透技术。 |
+| 8 | [charmbracelet/glow](https://github.com/charmbracelet/glow) | 21,961 | 🤖 该项目是一个命令行工具，用于渲染Markdown文本并添加视觉效果。 |
+| 9 | [istio/istio](https://github.com/istio/istio) | 37,733 | 🤖 Istio是一个连接、安全、控制和观察服务的开源平台。 |
+| 10 | [memodb-io/Acontext](https://github.com/memodb-io/Acontext) | 2,092 | 🤖 Acontext是一个为智能代理提供的上下文数据平台。 |
 
 ## 🐍 Python 热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [rendercv/rendercv](https://github.com/rendercv/rendercv) | 6,866 | 🤖 RenderCV是一个基于Typst的在线简历/CV生成工具，专为学术和工程领域的专业人士设计。 |
-| 2 | [exo-explore/exo](https://github.com/exo-explore/exo) | 37,880 | 🤖 该项目允许用户使用日常设备（如手机、电脑、手表等）在家中搭建和运行自己的AI集群。 |
-| 3 | [google/langextract](https://github.com/google/langextract) | 18,639 | 🤖 该项目是一个Python库，利用大语言模型（LLMs）从无结构文本中提取结构化信息，并提供精确的源基准和交互式可视化功能。 |
-| 4 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 5,439 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
-| 5 | [safety-research/bloom](https://github.com/safety-research/bloom) | 556 | 🤖 该项目"Bloom"的核心功能是能够立即评估任何行为。 |
-| 6 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 13,340 | 🤖 该项目是一个命令行工具，用于配置和监控Claude Code。 |
-| 7 | [xerrors/Yuxi-Know](https://github.com/xerrors/Yuxi-Know) | 2,838 | 🤖 该项目是一个集成了LightRAG知识库和知识图谱的智能体平台，支持多种工具和技术，如DeepAgents、MinerU PDF、Neo4j和MCP。 |
-| 8 | [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) | 73,619 | 🤖 该项目提供了一个Web应用安全和渗透测试/CTF的有用负载和绕过列表。 |
-| 9 | [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni) | 1,401 | 🤖 该项目是一个用于高效推理的多模态模型框架。 |
-| 10 | [anthropics/skills](https://github.com/anthropics/skills) | 25,873 | 🤖 该项目是一个公共仓库，用于存储和开发智能代理的技能。 |
+| 1 | [rendercv/rendercv](https://github.com/rendercv/rendercv) | 8,577 | 🤖 RenderCV是一个基于Typst的在线简历/CV生成工具，专为学术和工程领域的专业人士设计。 |
+| 2 | [google/langextract](https://github.com/google/langextract) | 18,987 | 🤖 该项目是一个Python库，利用大语言模型（LLMs）从无结构文本中提取结构化信息，并提供精确的源基准和交互式可视化功能。 |
+| 3 | [vllm-project/vllm-omni](https://github.com/vllm-project/vllm-omni) | 1,547 | 🤖 该项目是一个用于高效推理的多模态模型框架。 |
+| 4 | [davila7/claude-code-templates](https://github.com/davila7/claude-code-templates) | 13,573 | 🤖 该项目是一个命令行工具，用于配置和监控Claude Code。 |
+| 5 | [safety-research/bloom](https://github.com/safety-research/bloom) | 706 | 🤖 该项目"Bloom"的核心功能是能够立即评估任何行为。 |
+| 6 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 5,741 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
+| 7 | [apurvsinghgautam/robin](https://github.com/apurvsinghgautam/robin) | 2,502 | 🤖 该项目是一个人工智能驱动的暗网开源情报工具，用于收集和分析暗网数据。 |
+| 8 | [anthropics/skills](https://github.com/anthropics/skills) | 26,412 | 🤖 该项目是一个公共仓库，用于存储和开发智能代理的技能。 |
+| 9 | [xerrors/Yuxi-Know](https://github.com/xerrors/Yuxi-Know) | 3,021 | 🤖 该项目是一个集成了LightRAG知识库和知识图谱的智能体平台，支持多种工具和技术，如DeepAgents、MinerU PDF、Neo4j和MCP。 |
+| 10 | [LMCache/LMCache](https://github.com/LMCache/LMCache) | 6,429 | 🤖 LMCache项目提供了一个快速的键值缓存层，以加速大型语言模型（LLM）的性能。 |
 
 
 ## 🗂 历史归档 (Archives)
