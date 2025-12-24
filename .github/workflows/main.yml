@@ -2,8 +2,7 @@ name: Daily Trending Scraper
 
 on:
   schedule:
-    # 每天 UTC 时间 01:00 (北京时间 09:00) 运行
-    - cron: '0 1 * * *'
+    - cron: '0 17 * * *'
   workflow_dispatch: # 允许手动触发
 
 jobs:
