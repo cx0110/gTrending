@@ -113,8 +113,9 @@ jobs:
           featured: false
           draft: false
           image:
-            caption: ""
-            focal_point: "Smart"
+            filename: github-logo.svg
+            focal_point: Smart
+            preview_only: false
           ---
           
           ## 📈 GitHub Trending
