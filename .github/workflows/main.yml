@@ -29,6 +29,7 @@ jobs:
         env:
           # 在 GitHub Secrets 中配置这些变量
           # 设为 'true' 启用 LangChain，设为 'false' 仅抓取
+          TZ: 'Asia/Shanghai'
           ENABLE_LLM: ${{ vars.ENABLE_LLM || 'false' }} 
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           # 如果使用第三方/代理，请配置 BASE_URL，否则默认官方
