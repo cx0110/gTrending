@@ -55,6 +55,7 @@ jobs:
       - name: Push to Obsidian Vault
         uses: cpina/github-action-push-to-another-repository@main
         env:
+          TZ: 'Asia/Shanghai'
           # 记得在 Repo A 的 Secrets 里配置 API_TOKEN_GITHUB
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
