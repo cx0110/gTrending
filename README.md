@@ -2,52 +2,52 @@
 
 自动抓取 GitHub 官方热榜，由 AI 辅助生成中文摘要。
 
-> 更新时间: 2026-01-03 01:23 UTC
+> 更新时间: 2026-01-03 12:43 UTC
 
 
 ## 🔥 全球热榜 (General)
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [HQarroum/docker-android](https://github.com/HQarroum/docker-android) | 1,587 | 🤖 该项目提供一个最小化和可定制的Docker镜像，用于以服务方式运行Android模拟器。 |
-| 2 | [nocodb/nocodb](https://github.com/nocodb/nocodb) | 59,863 | 🤖 Nocodb是一个开源的Airtable替代品，提供数据表格、视图、表单和API等功能，帮助用户管理和协作数据。 |
-| 3 | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | 70,343 | 🤖 该项目提供了使用OpenAI API的示例和指南。 |
-| 4 | [ourongxing/newsnow](https://github.com/ourongxing/newsnow) | 15,955 | 🤖 该项目提供实时和最热门新闻的优雅阅读体验。 |
-| 5 | [rossant/awesome-math](https://github.com/rossant/awesome-math) | 12,902 | 🤖 该项目是一个精选的数学资源列表，收录了各种数学相关的资源。 |
-| 6 | [usememos/memos](https://github.com/usememos/memos) | 48,682 | 🤖 usememos/memos 是一个开源的、自托管的笔记服务，允许用户完全控制自己的数据和笔记。 |
-| 7 | [GitHubDaily/GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 43,746 | 🤖 该项目分享和整理GitHub上高质量、有趣实用的开源技术教程、开发者工具、编程网站和技术资讯。 |
-| 8 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | 19,982 | 🤖 该项目使用CTranslate2实现更快的Whisper语音转文字功能。 |
-| 9 | [Koenkk/zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt) | 14,474 | 🤖 该项目是一个 Zigbee 到 MQTT 的桥接器，用于消除对专有 Zigbee 网关的依赖。 |
+| 1 | [HQarroum/docker-android](https://github.com/HQarroum/docker-android) | 1,817 | 🤖 该项目提供一个最小化和可定制的Docker镜像，用于以服务方式运行Android模拟器。 |
+| 2 | [nocodb/nocodb](https://github.com/nocodb/nocodb) | 59,945 | 🤖 Nocodb是一个开源的Airtable替代品，提供数据表格、视图、表单和API等功能，帮助用户管理和协作数据。 |
+| 3 | [openai/openai-cookbook](https://github.com/openai/openai-cookbook) | 70,444 | 🤖 该项目提供了使用OpenAI API的示例和指南。 |
+| 4 | [ourongxing/newsnow](https://github.com/ourongxing/newsnow) | 16,075 | 🤖 该项目提供实时和最热门新闻的优雅阅读体验。 |
+| 5 | [rossant/awesome-math](https://github.com/rossant/awesome-math) | 12,996 | 🤖 该项目是一个精选的数学资源列表，收录了各种数学相关的资源。 |
+| 6 | [usememos/memos](https://github.com/usememos/memos) | 48,986 | 🤖 usememos/memos 是一个开源的、自托管的笔记服务，允许用户完全控制自己的数据和笔记。 |
+| 7 | [GitHubDaily/GitHubDaily](https://github.com/GitHubDaily/GitHubDaily) | 43,866 | 🤖 该项目分享和整理GitHub上高质量、有趣实用的开源技术教程、开发者工具、编程网站和技术资讯。 |
+| 8 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | 20,080 | 🤖 该项目使用CTranslate2实现更快的Whisper语音转文字功能。 |
+| 9 | [Koenkk/zigbee2mqtt](https://github.com/Koenkk/zigbee2mqtt) | 14,521 | 🤖 该项目是一个 Zigbee 到 MQTT 的桥接器，用于消除对专有 Zigbee 网关的依赖。 |
 
 ## 🐹 Go 语言热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [usememos/memos](https://github.com/usememos/memos) | 48,682 | 🤖 usememos/memos 是一个开源的、自托管的笔记服务，允许用户完全控制自己的数据和笔记。 |
-| 2 | [glanceapp/glance](https://github.com/glanceapp/glance) | 30,850 | 🤖 Glance是一个自托管的仪表盘，用于聚合和展示各种信息源的内容。 |
-| 3 | [autobrr/qui](https://github.com/autobrr/qui) | 1,680 | 🤖 该项目是一个现代化的qBittorrent网页界面，支持多实例，并使用Go和React编写。 |
-| 4 | [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | 14,839 | 🤖 Plandex-ai/plandex是一个开源的AI编码代理，旨在协助完成大型项目和实际任务的编码工作。 |
-| 5 | [danielpaulus/go-ios](https://github.com/danielpaulus/go-ios) | 1,661 | 🤖 该项目实现了一个操作系统无关的iOS设备功能库，允许用户运行UI测试、启动或杀死应用、安装应用等操作。 |
-| 6 | [kubernetes-sigs/gateway-api](https://github.com/kubernetes-sigs/gateway-api) | 2,540 | 🤖 该项目是Kubernetes的下一代服务组合（如Ingress）和负载均衡API的仓库。 |
-| 7 | [labstack/echo](https://github.com/labstack/echo) | 31,974 | 🤖 Labstack/echo是一个高性能、极简主义的Go语言Web框架。 |
-| 8 | [evcc-io/evcc](https://github.com/evcc-io/evcc) | 5,963 | 🤖 evcc-io/evcc项目的核心功能是优化电动汽车的充电过程，利用太阳能发电来为汽车充电，减少对电网的依赖。 |
-| 9 | [go-vikunja/vikunja](https://github.com/go-vikunja/vikunja) | 2,968 | 🤖 该项目是一个待办事项应用，用于组织和管理用户的日常任务和生活。 |
-| 10 | [hashicorp/terraform](https://github.com/hashicorp/terraform) | 47,369 | 🤖 Terraform是一种工具，允许用户通过编写声明式配置文件来创建、修改和管理基础设施。 |
+| 1 | [usememos/memos](https://github.com/usememos/memos) | 48,986 | 🤖 usememos/memos 是一个开源的、自托管的笔记服务，允许用户完全控制自己的数据和笔记。 |
+| 2 | [glanceapp/glance](https://github.com/glanceapp/glance) | 30,874 | 🤖 Glance是一个自托管的仪表盘，用于聚合和展示各种信息源的内容。 |
+| 3 | [autobrr/qui](https://github.com/autobrr/qui) | 1,700 | 🤖 该项目是一个现代化的qBittorrent网页界面，支持多实例，并使用Go和React编写。 |
+| 4 | [plandex-ai/plandex](https://github.com/plandex-ai/plandex) | 14,842 | 🤖 Plandex-ai/plandex是一个开源的AI编码代理，旨在协助完成大型项目和实际任务的编码工作。 |
+| 5 | [danielpaulus/go-ios](https://github.com/danielpaulus/go-ios) | 1,671 | 🤖 该项目实现了一个操作系统无关的iOS设备功能库，允许用户运行UI测试、启动或杀死应用、安装应用等操作。 |
+| 6 | [kubernetes-sigs/gateway-api](https://github.com/kubernetes-sigs/gateway-api) | 2,539 | 🤖 该项目是Kubernetes的下一代服务组合（如Ingress）和负载均衡API的仓库。 |
+| 7 | [labstack/echo](https://github.com/labstack/echo) | 31,976 | 🤖 Labstack/echo是一个高性能、极简主义的Go语言Web框架。 |
+| 8 | [evcc-io/evcc](https://github.com/evcc-io/evcc) | 5,965 | 🤖 evcc-io/evcc项目的核心功能是优化电动汽车的充电过程，利用太阳能发电来为汽车充电，减少对电网的依赖。 |
+| 9 | [go-vikunja/vikunja](https://github.com/go-vikunja/vikunja) | 2,971 | 🤖 该项目是一个待办事项应用，用于组织和管理用户的日常任务和生活。 |
+| 10 | [hashicorp/terraform](https://github.com/hashicorp/terraform) | 47,370 | 🤖 Terraform是一种工具，允许用户通过编写声明式配置文件来创建、修改和管理基础设施。 |
 
 ## 🐍 Python 热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [rossant/awesome-math](https://github.com/rossant/awesome-math) | 12,902 | 🤖 该项目是一个精选的数学资源列表，收录了各种数学相关的资源。 |
-| 2 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | 19,982 | 🤖 该项目使用CTranslate2实现更快的Whisper语音转文字功能。 |
-| 3 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 7,950 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
-| 4 | [Bambu-Research-Group/RFID-Tag-Guide](https://github.com/Bambu-Research-Group/RFID-Tag-Guide) | 1,424 | 🤖 该项目提供了关于如何读取Bambulab NFC 标签的指南和说明。 |
-| 5 | [google-gemini/computer-use-preview](https://github.com/google-gemini/computer-use-preview) | 2,437 | 🤖 该项目“google-gemini/computer-use-preview”可能与谷歌的Gemini项目有关，Gemini是一种人工智能聊天机器人，旨在提供对话式人机交互界面。 |
-| 6 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 71,309 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
-| 7 | [subframe7536/maple-font](https://github.com/subframe7536/maple-font) | 22,017 | 🤖 Maple Mono是一个开源的等宽字体，具有圆角、连字、Nerd-Font图标和细粒度的自定义选项，适用于IDE和终端使用。 |
-| 8 | [OpenMind/OM1](https://github.com/OpenMind/OM1) | 2,336 | 🤖 OpenMind/OM1是一个模块化的AI运行时环境，旨在为机器人提供灵活、可扩展的智能化解决方案。 |
-| 9 | [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) | 9,828 | 🤖 Kronos是一个针对金融市场语言的基础模型，旨在理解和处理金融市场相关的语言和数据。 |
-| 10 | [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) | 2,128 | 🤖 该项目为ComfyUI提供了各种自定义节点。 |
+| 1 | [rossant/awesome-math](https://github.com/rossant/awesome-math) | 12,996 | 🤖 该项目是一个精选的数学资源列表，收录了各种数学相关的资源。 |
+| 2 | [SYSTRAN/faster-whisper](https://github.com/SYSTRAN/faster-whisper) | 20,080 | 🤖 该项目使用CTranslate2实现更快的Whisper语音转文字功能。 |
+| 3 | [yichuan-w/LEANN](https://github.com/yichuan-w/LEANN) | 7,983 | 🤖 该项目使用LEANN技术实现了快速、准确、100%私有的RAG应用，同时节省了97%的存储空间。 |
+| 4 | [Bambu-Research-Group/RFID-Tag-Guide](https://github.com/Bambu-Research-Group/RFID-Tag-Guide) | 1,425 | 🤖 该项目提供了关于如何读取Bambulab NFC 标签的指南和说明。 |
+| 5 | [google-gemini/computer-use-preview](https://github.com/google-gemini/computer-use-preview) | 2,448 | 🤖 该项目“google-gemini/computer-use-preview”可能与谷歌的Gemini项目有关，Gemini是一种人工智能聊天机器人，旨在提供对话式人机交互界面。 |
+| 6 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 71,339 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
+| 7 | [subframe7536/maple-font](https://github.com/subframe7536/maple-font) | 22,053 | 🤖 Maple Mono是一个开源的等宽字体，具有圆角、连字、Nerd-Font图标和细粒度的自定义选项，适用于IDE和终端使用。 |
+| 8 | [OpenMind/OM1](https://github.com/OpenMind/OM1) | 2,339 | 🤖 OpenMind/OM1是一个模块化的AI运行时环境，旨在为机器人提供灵活、可扩展的智能化解决方案。 |
+| 9 | [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) | 9,838 | 🤖 Kronos是一个针对金融市场语言的基础模型，旨在理解和处理金融市场相关的语言和数据。 |
+| 10 | [kijai/ComfyUI-KJNodes](https://github.com/kijai/ComfyUI-KJNodes) | 2,129 | 🤖 该项目为ComfyUI提供了各种自定义节点。 |
 
 
 ## 🗂 历史归档 (Archives)
