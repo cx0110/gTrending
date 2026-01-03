@@ -82,6 +82,7 @@ jobs:
           # === 修改部分：推送到博客 (创建模式) ===
       - name: Create Post in Hugo Blog
         env:
+          TZ: 'Asia/Shanghai'
           BLOG_REPO_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
           BLOG_REPO: ${{ vars.BLOG_REPO }}
         run: |
