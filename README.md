@@ -2,53 +2,53 @@
 
 自动抓取 GitHub 官方热榜，由 AI 辅助生成中文摘要。
 
-> 更新时间: 2026-03-31 01:56 UTC
+> 更新时间: 2026-03-31 16:09 UTC
 
 
 ## 🔥 全球热榜 (General)
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 29,383 | 🤖 Microsoft/VibeVoice是一个开源的边缘智能语音AI项目，旨在实现边缘设备上的实时语音识别和交互。 |
-| 2 | [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 9,481 | 🤖 该项目提供了一个视觉化的、示例驱动的Claude代码指南，涵盖了从基本概念到高级代理的所有内容，并提供了可复制的模板。 |
-| 3 | [Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 17,369 | 🤖 该项目实现了团队优先的多智能体编排，用于Claude Code，提高多智能体系统的协调和管理能力。 |
-| 4 | [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 25,549 | 🤖 该项目旨在实践和改进代码的最佳实践，以使Claude的代码达到完美状态。 |
-| 5 | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | 86,159 | 🤖 该项目实现了实时人脸替换和一键视频深度伪造，只需使用单张图像。 |
-| 6 | [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 64,407 | 🤖 OpenBB是一个为分析师、量化交易者和AI代理提供的金融数据平台。 |
-| 7 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 439,572 | 🤖 freeCodeCamp是一个开源的编程学习平台，提供免费的数学、编程和计算机科学课程。 |
-| 8 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 74,503 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
-| 9 | [apache/superset](https://github.com/apache/superset) | 71,798 | 🤖 Apache Superset 是一个数据可视化和数据探索平台。 |
-| 10 | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) | 21,356 | 🤖 fastfetch 是一个高性能的系统信息工具，类似于 neofetch，用于获取和展示系统信息。 |
+| 1 | [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 31,745 | 🤖 Microsoft/VibeVoice是一个开源的边缘智能语音AI项目，旨在实现边缘设备上的实时语音识别和交互。 |
+| 2 | [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 10,883 | 🤖 该项目提供了一个视觉化的、示例驱动的Claude代码指南，涵盖了从基本概念到高级代理的所有内容，并提供了可复制的模板。 |
+| 3 | [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 27,010 | 🤖 该项目旨在实践和改进代码的最佳实践，以使Claude的代码达到完美状态。 |
+| 4 | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | 86,693 | 🤖 该项目实现了实时人脸替换和一键视频深度伪造，只需使用单张图像。 |
+| 5 | [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 64,718 | 🤖 OpenBB是一个为分析师、量化交易者和AI代理提供的金融数据平台。 |
+| 6 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | 439,991 | 🤖 freeCodeCamp是一个开源的编程学习平台，提供免费的数学、编程和计算机科学课程。 |
+| 7 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 75,011 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
+| 8 | [apache/superset](https://github.com/apache/superset) | 72,076 | 🤖 Apache Superset 是一个数据可视化和数据探索平台。 |
+| 9 | [fastfetch-cli/fastfetch](https://github.com/fastfetch-cli/fastfetch) | 21,491 | 🤖 fastfetch 是一个高性能的系统信息工具，类似于 neofetch，用于获取和展示系统信息。 |
+| 10 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 19,237 | 🤖 Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
 
 ## 🐹 Go 语言热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [go-acme/lego](https://github.com/go-acme/lego) | 9,402 | 🤖 该项目是一个用Go语言编写的Let's Encrypt/ACME客户端和库，用于自动化获取和管理TLS证书。 |
-| 2 | [supabase/cli](https://github.com/supabase/cli) | 1,907 | 🤖 Supabase CLI是一个命令行工具，用于管理Postgres迁移、运行Supabase本地开发环境、部署边缘函数、备份Postgres数据库以及从数据库模式生成类型定义。 |
-| 3 | [riverqueue/river](https://github.com/riverqueue/river) | 4,942 | 🤖 Riverqueue/River 是一个用 Go 编写的快速可靠的后台任务队列系统。 |
-| 4 | [AlistGo/alist](https://github.com/AlistGo/alist) | 49,235 | 🤖 AlistGo/alist是一个支持多存储的文件列表和WebDAV程序。 |
-| 5 | [owncast/owncast](https://github.com/owncast/owncast) | 11,119 | 🤖 该项目允许用户自行托管直播视频流媒体和聊天室，实现对直播内容的完全控制。 |
-| 6 | [putyy/res-downloader](https://github.com/putyy/res-downloader) | 16,182 | 🤖 该项目是一个多功能的网络资源下载工具，支持下载包括视频号、小程序、抖音、快手、小红书、直播流、m3u8、酷狗、QQ音乐等在内的各种常见网络资源。 |
-| 7 | [CJackHwang/ds2api](https://github.com/CJackHwang/ds2api) | 735 | 🤖 该项目是一个高性能的Deepseek客户端对话转API，支持多账号轮询和后台管理系统，兼容多种工具。 |
-| 8 | [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) | 8,097 | 🤖 该项目维护一个社区管理的域名列表，以生成V2Ray的geosite.dat文件。 |
-| 9 | [NoFxAiOS/nofx](https://github.com/NoFxAiOS/nofx) | 11,461 | 🤖 该项目是一个多AI、多交易所的交易基础设施，包含策略工作室，用于实现自动化交易。 |
-| 10 | [Loyalsoldier/geoip](https://github.com/Loyalsoldier/geoip) | 5,797 | 🤖 该项目提供了一个增强版的GeoIP规则文件，支持多种格式和平台，包括V2Ray、Xray-core、sing-box、Clash、mihomo等。 |
+| 1 | [go-acme/lego](https://github.com/go-acme/lego) | 9,414 | 🤖 该项目是一个用Go语言编写的Let's Encrypt/ACME客户端和库，用于自动化获取和管理TLS证书。 |
+| 2 | [supabase/cli](https://github.com/supabase/cli) | 1,928 | 🤖 Supabase CLI是一个命令行工具，用于管理Postgres迁移、运行Supabase本地开发环境、部署边缘函数、备份Postgres数据库以及从数据库模式生成类型定义。 |
+| 3 | [riverqueue/river](https://github.com/riverqueue/river) | 4,960 | 🤖 Riverqueue/River 是一个用 Go 编写的快速可靠的后台任务队列系统。 |
+| 4 | [AlistGo/alist](https://github.com/AlistGo/alist) | 49,238 | 🤖 AlistGo/alist是一个支持多存储的文件列表和WebDAV程序。 |
+| 5 | [owncast/owncast](https://github.com/owncast/owncast) | 11,132 | 🤖 该项目允许用户自行托管直播视频流媒体和聊天室，实现对直播内容的完全控制。 |
+| 6 | [putyy/res-downloader](https://github.com/putyy/res-downloader) | 16,218 | 🤖 该项目是一个多功能的网络资源下载工具，支持下载包括视频号、小程序、抖音、快手、小红书、直播流、m3u8、酷狗、QQ音乐等在内的各种常见网络资源。 |
+| 7 | [CJackHwang/ds2api](https://github.com/CJackHwang/ds2api) | 761 | 🤖 该项目是一个高性能的Deepseek客户端对话转API，支持多账号轮询和后台管理系统，兼容多种工具。 |
+| 8 | [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) | 8,101 | 🤖 该项目维护一个社区管理的域名列表，以生成V2Ray的geosite.dat文件。 |
+| 9 | [NoFxAiOS/nofx](https://github.com/NoFxAiOS/nofx) | 11,496 | 🤖 该项目是一个多AI、多交易所的交易基础设施，包含策略工作室，用于实现自动化交易。 |
+| 10 | [Loyalsoldier/geoip](https://github.com/Loyalsoldier/geoip) | 5,802 | 🤖 该项目提供了一个增强版的GeoIP规则文件，支持多种格式和平台，包括V2Ray、Xray-core、sing-box、Clash、mihomo等。 |
 
 ## 🐍 Python 热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 29,383 | 🤖 Microsoft/VibeVoice是一个开源的边缘智能语音AI项目，旨在实现边缘设备上的实时语音识别和交互。 |
-| 2 | [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 9,481 | 🤖 该项目提供了一个视觉化的、示例驱动的Claude代码指南，涵盖了从基本概念到高级代理的所有内容，并提供了可复制的模板。 |
-| 3 | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | 86,159 | 🤖 该项目实现了实时人脸替换和一键视频深度伪造，只需使用单张图像。 |
-| 4 | [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 64,407 | 🤖 OpenBB是一个为分析师、量化交易者和AI代理提供的金融数据平台。 |
-| 5 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 74,503 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
-| 6 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 18,132 | 🤖 Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
-| 7 | [SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | 4,019 | 🤖 该项目的核心功能是通过代理树搜索算法实现工作坊级别的自动化科学发现。 |
-| 8 | [microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) | 15,988 | 🤖 该项目是一个用于训练和优化AI智能体的绝对训练工具。 |
-| 9 | [Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool) | 56,809 | 🤖 该项目是一个集成多种黑客工具的综合平台，旨在为黑客提供一个全面的工具集合。 |
-| 10 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 49,785 | 🤖 该项目是一个利用人工智能技术来管理对冲基金的团队，旨在使用AI算法进行投资决策和风险管理。 |
+| 1 | [microsoft/VibeVoice](https://github.com/microsoft/VibeVoice) | 31,747 | 🤖 Microsoft/VibeVoice是一个开源的边缘智能语音AI项目，旨在实现边缘设备上的实时语音识别和交互。 |
+| 2 | [luongnv89/claude-howto](https://github.com/luongnv89/claude-howto) | 10,883 | 🤖 该项目提供了一个视觉化的、示例驱动的Claude代码指南，涵盖了从基本概念到高级代理的所有内容，并提供了可复制的模板。 |
+| 3 | [hacksider/Deep-Live-Cam](https://github.com/hacksider/Deep-Live-Cam) | 86,693 | 🤖 该项目实现了实时人脸替换和一键视频深度伪造，只需使用单张图像。 |
+| 4 | [OpenBB-finance/OpenBB](https://github.com/OpenBB-finance/OpenBB) | 64,718 | 🤖 OpenBB是一个为分析师、量化交易者和AI代理提供的金融数据平台。 |
+| 5 | [sherlock-project/sherlock](https://github.com/sherlock-project/sherlock) | 75,011 | 🤖 该项目可以通过用户名跨社交网络搜索和定位相关社交媒体账户。 |
+| 6 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 19,237 | 🤖 Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
+| 7 | [SakanaAI/AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | 4,101 | 🤖 该项目的核心功能是通过代理树搜索算法实现工作坊级别的自动化科学发现。 |
+| 8 | [microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) | 16,054 | 🤖 该项目是一个用于训练和优化AI智能体的绝对训练工具。 |
+| 9 | [Z4nzu/hackingtool](https://github.com/Z4nzu/hackingtool) | 56,955 | 🤖 该项目是一个集成多种黑客工具的综合平台，旨在为黑客提供一个全面的工具集合。 |
+| 10 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 49,818 | 🤖 该项目是一个利用人工智能技术来管理对冲基金的团队，旨在使用AI算法进行投资决策和风险管理。 |
 
 
 ## 🗂 历史归档 (Archives)
