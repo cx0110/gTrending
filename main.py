@@ -180,15 +180,14 @@ def build_section(title, repos, settings, llm_clients, model_names):
             elif any(llm_clients):
                 ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
                 if ai_sum:
-                    final_desc = f"🤖 {ai_sum}"
-                    model_tag = f" [{model_used}]"
+                    final_desc = f"🤖 [{model_used}] {ai_sum}"
                     save_cached_summary(name, ai_sum)
                 time.sleep(1.5)
         
         if len(final_desc) > 150:
             final_desc = final_desc[:147] + "..."
 
-        section += f"| {idx} | [{name}]({url}){model_tag} | {stars} | {final_desc} |\n"
+        section += f"| {idx} | [{name}]({url}) | {stars} | {final_desc} |\n"
     
     return section
 
