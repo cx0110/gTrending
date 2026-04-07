@@ -4,6 +4,7 @@ import time
 import requests
 import datetime
 import sqlite3
+import threading
 from bs4 import BeautifulSoup
 from openai import OpenAI
 
@@ -108,36 +109,54 @@ def scrape_github_trending(url, limit=10):
         print(f"❌ 爬虫异常: {e}")
         return []
 
-# === 4. AI 摘要生成 ===
-def generate_ai_summary(client, repo, model_name):
-    if not client: return ""
-    
+# === 4. AI 摘要生成 (双 API 并发) ===
+def generate_ai_summary(clients, repo, model_names):
+    result = {"text": "", "model": ""}
+    lock = threading.Lock()
+
+    def call_api(c, model, name, desc):
+        if not c:
+            return
+        prompt = (
+            f"项目: {name}\n"
+            f"描述: {desc}\n"
+            "请用中文一句话概括这个项目的核心功能，不要废话。"
+        )
+        try:
+            response = c.chat.completions.create(
+                model=model,
+                messages=[
+                    {"role": "system", "content": "你是一个技术专家。"},
+                    {"role": "user", "content": prompt}
+                ],
+                max_tokens=100,
+                temperature=0.3
+            )
+            text = response.choices[0].message.content.strip()
+            with lock:
+                if not result["text"]:
+                    result["text"] = text
+                    result["model"] = model
+        except Exception as e:
+            print(f"⚠️ [{model}] 接口错误: {e}")
+
     name = repo['repo_name']
     desc = repo['description']
-    
-    prompt = (
-        f"项目: {name}\n"
-        f"描述: {desc}\n"
-        "请用中文一句话概括这个项目的核心功能，不要废话。"
-    )
 
-    try:
-        response = client.chat.completions.create(
-            model=model_name,
-            messages=[
-                {"role": "system", "content": "你是一个技术专家。"},
-                {"role": "user", "content": prompt}
-            ],
-            max_tokens=100,
-            temperature=0.3
-        )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        print(f"⚠️ AI 接口错误: {e}")
-        return ""
+    threads = []
+    for client, model_name in zip(clients, model_names):
+        if client:
+            t = threading.Thread(target=call_api, args=(client, model_name, name, desc))
+            threads.append(t)
+            t.start()
+
+    for t in threads:
+        t.join(timeout=15)
+
+    return result["text"], result["model"]
 
 # === 5. Markdown 构建 (集成 SQLite) ===
-def build_section(title, repos, settings, llm_client):
+def build_section(title, repos, settings, llm_clients, model_names):
     section = f"## {title}\n\n"
     section += "| 排名 | 项目 | Stars | 简介 (AI/Raw) |\n"
     section += "| :--- | :--- | :--- | :--- |\n"
@@ -149,6 +168,7 @@ def build_section(title, repos, settings, llm_client):
         raw_desc = repo['description'].replace('|', '\|').replace('\n', ' ')
         
         final_desc = raw_desc
+        model_tag = ""
         
         # AI 逻辑
         if settings['enable_llm']:
@@ -157,16 +177,18 @@ def build_section(title, repos, settings, llm_client):
             if cached_summary:
                 final_desc = f"🤖 {cached_summary}"
             
-            elif llm_client:
-                ai_sum = generate_ai_summary(llm_client, repo, settings.get('ai_model', 'MiniMax-M2.7'))
+            elif any(llm_clients):
+                ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
                 if ai_sum:
                     final_desc = f"🤖 {ai_sum}"
+                    model_tag = f" [{model_used}]"
                     save_cached_summary(name, ai_sum)
+                time.sleep(1.5)
         
         if len(final_desc) > 150:
             final_desc = final_desc[:147] + "..."
 
-        section += f"| {idx} | [{name}]({url}) | {stars} | {final_desc} |\n"
+        section += f"| {idx} | [{name}]({url}){model_tag} | {stars} | {final_desc} |\n"
     
     return section
 
@@ -189,12 +211,21 @@ def main():
     
     init_db()
     
-    llm_client = None
+    llm_clients = [None, None]
+    model_names = ["", ""]
+    
     if settings['enable_llm']:
         minimax_api_key = os.environ.get("MINIMAX_API_KEY")
         minimax_base_url = os.environ.get("MINIMAX_BASE_URL", "https://api.minimaxi.com/anthropic")
         if minimax_api_key:
-            llm_client = OpenAI(api_key=minimax_api_key, base_url=minimax_base_url)
+            llm_clients[0] = OpenAI(api_key=minimax_api_key, base_url=minimax_base_url)
+            model_names[0] = os.getenv("LLM_MODEL", "MiniMax-M2.7")
+        
+        openai_api_key = os.environ.get("OPENAI_API_KEY")
+        openai_base_url = os.environ.get("OPENAI_BASE_URL")
+        if openai_api_key:
+            llm_clients[1] = OpenAI(api_key=openai_api_key, base_url=openai_base_url)
+            model_names[1] = settings.get('ai_model', 'gpt-3.5-turbo')
 
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     update_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M UTC")
@@ -206,7 +237,7 @@ def main():
         repos = scrape_github_trending(item['url'], limit=limit)
         
         if repos:
-            section_md = build_section(item['title'], repos, settings, llm_client)
+            section_md = build_section(item['title'], repos, settings, llm_clients, model_names)
             report_content += section_md + "\n"
         
         time.sleep(2)
