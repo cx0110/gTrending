@@ -51,7 +51,6 @@ def save_cached_summary(name, summary):
     """保存摘要到数据库"""
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     with sqlite3.connect(DB_PATH) as conn:
-        # 使用 REPLACE INTO，如果存在则更新，不存在则插入
         conn.execute("""
             REPLACE INTO project_history (name, summary, updated_at) 
             VALUES (?, ?, ?)
@@ -76,24 +75,20 @@ def scrape_github_trending(url, limit=10):
         soup = BeautifulSoup(resp.text, 'html.parser')
         repos = []
         
-        # 遍历文章列表 (GitHub 目前使用 article.Box-row)
         items = soup.select('article.Box-row')
         
-        for item in items[:limit]: # 这里直接做截断
+        for item in items[:limit]:
             try:
-                # 1. 获取项目名和链接
                 h2_a = item.select_one('h2 a')
                 if not h2_a: continue
                 
-                href = h2_a['href'].strip() # /owner/repo
-                full_name = href.strip('/') # owner/repo
+                href = h2_a['href'].strip()
+                full_name = href.strip('/')
                 repo_url = f"https://github.com{href}"
                 
-                # 2. 获取描述
                 p_desc = item.select_one('p.col-9')
                 description = p_desc.text.strip() if p_desc else "无描述"
                 
-                # 3. 获取 Stars (粗略获取当日新增或总星数)
                 stars_elem = item.select_one('a[href$="/stargazers"]')
                 stars = stars_elem.text.strip() if stars_elem else "N/A"
                 
@@ -157,21 +152,17 @@ def build_section(title, repos, settings, llm_client):
         
         # AI 逻辑
         if settings['enable_llm']:
-            # 1. 尝试从 SQLite 查缓存
             cached_summary = get_cached_summary(name)
             
             if cached_summary:
                 final_desc = f"🤖 {cached_summary}"
             
-            # 2. 如果没缓存，且有 Client，则生成并保存
             elif llm_client:
-                ai_sum = generate_ai_summary(llm_client, repo, settings.get('ai_model', 'gpt-3.5-turbo'))
+                ai_sum = generate_ai_summary(llm_client, repo, settings.get('ai_model', 'MiniMax-M2.7'))
                 if ai_sum:
                     final_desc = f"🤖 {ai_sum}"
-                    # 写入 SQLite
                     save_cached_summary(name, ai_sum)
         
-        # 截断长文本
         if len(final_desc) > 150:
             final_desc = final_desc[:147] + "..."
 
@@ -183,7 +174,7 @@ def build_section(title, repos, settings, llm_client):
 def get_archive_list(archive_dir):
     if not os.path.exists(archive_dir): return []
     files = [f for f in os.listdir(archive_dir) if f.endswith('.md')]
-    files.sort(reverse=True) # 日期倒序
+    files.sort(reverse=True)
     
     lines = []
     for f in files:
@@ -196,24 +187,20 @@ def main():
     config = load_config()
     settings = config['settings']
     
-    # 初始化数据库
     init_db()
     
-    # 初始化 AI 客户端
     llm_client = None
     if settings['enable_llm']:
-        api_key = os.environ.get("OPENAI_API_KEY")
-        base_url = os.environ.get("OPENAI_BASE_URL")
-        if api_key:
-            llm_client = OpenAI(api_key=api_key, base_url=base_url)
+        minimax_api_key = os.environ.get("MINIMAX_API_KEY")
+        minimax_base_url = os.environ.get("MINIMAX_BASE_URL", "https://api.minimaxi.com/anthropic")
+        if minimax_api_key:
+            llm_client = OpenAI(api_key=minimax_api_key, base_url=minimax_base_url)
 
-    # 准备内容
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     update_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M UTC")
     
     report_content = settings['readme_header'].replace("{{ update_time }}", update_time) + "\n\n"
 
-    # 遍历任务
     for item in config['collections']:
         limit = settings.get('top_list_limit', 10)
         repos = scrape_github_trending(item['url'], limit=limit)
@@ -222,19 +209,16 @@ def main():
             section_md = build_section(item['title'], repos, settings, llm_client)
             report_content += section_md + "\n"
         
-        time.sleep(2) # 防封 IP 延迟
+        time.sleep(2)
 
-    # 保存今日归档
     archive_dir = settings['archive_dir']
     os.makedirs(archive_dir, exist_ok=True)
     with open(os.path.join(archive_dir, f"{today}.md"), "w", encoding="utf-8") as f:
         f.write(report_content)
     print(f"✅ 今日归档已生成: {today}.md")
 
-    # 更新 README (头部 + 归档列表)
     archive_list = get_archive_list(archive_dir)
     history_section = "\n## 🗂 历史归档 (Archives)\n\n| 日期 | 链接 |\n| :--- | :--- |\n"
-    # 仅显示最近 14 条
     history_section += "\n".join(archive_list[:14]) 
     
     with open(settings['readme_file'], "w", encoding="utf-8") as f:
