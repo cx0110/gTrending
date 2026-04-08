@@ -25,3 +25,30 @@ collections:
         
   - title: "🐍 Python 热门"
     url: "https://github.com/trending/python?since=daily"
+
+  - title: "🟨 JavaScript/TypeScript 热门"
+    url: "https://github.com/trending/javascript?since=daily"
+
+  - title: "☕ Java 热门"
+    url: "https://github.com/trending/java?since=daily"
+
+  - title: "🦀 Rust 热门"
+    url: "https://github.com/trending/rust?since=daily"
+
+  - title: "cpp C/C++ 热门"
+    url: "https://github.com/trending/cpp?since=daily"
+
+  - title: "🔷 C# 热门"
+    url: "https://github.com/trending/csharp?since=daily"
+
+  - title: "🎯 TypeScript 热门"
+    url: "https://github.com/trending/typescript?since=daily"
+
+  - title: "💜 Vue 热门"
+    url: "https://github.com/trending/vue?since=daily"
+
+  - title: "⚛️ React 热门"
+    url: "https://github.com/trending/react?since=daily"
+
+  - title: "🤖 AI/ML 热门"
+    url: "https://github.com/trending?since=daily&spoken_language_code=zh"
