@@ -4,7 +4,13 @@ settings:
   top_list_limit: 10
   # AI 模型: 推荐 Groq 的 llama-3.3-70b-versatile 或 gpt-4o-mini
   ai_model: "llama-3.3-70b-versatile"
-  
+
+  # 过滤规则
+  filters:
+    min_daily_stars: 10     # 每日新增星阈值，低于此值过滤
+    min_total_stars: 500    # 总星数阈值，低于此值过滤
+    skip_no_description: true  # 跳过无描述项目
+
   history_file: "data/history.json"
   archive_dir: "archives"
   readme_file: "README.md"

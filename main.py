@@ -108,6 +108,34 @@ def scrape_github_trending(url, limit=10):
         print(f"❌ 爬虫异常: {e}")
         return []
 
+def parse_stars(stars_str):
+    """解析星数字符串为数字，如 '1.2k' -> 1200"""
+    if not stars_str or stars_str == "N/A":
+        return 0
+    stars_str = stars_str.strip().replace(',', '')
+    if 'k' in stars_str.lower():
+        return int(float(stars_str.lower().replace('k', '')) * 1000)
+    if 'K' in stars_str:
+        return int(float(stars_str.replace('K', '')) * 1000)
+    try:
+        return int(stars_str)
+    except:
+        return 0
+
+def should_filter(repo, filters):
+    """判断项目是否应被过滤"""
+    desc = repo.get('description', '').strip().lower()
+    if filters.get('skip_no_description', False):
+        if not desc or desc in ['无描述', 'no description', '']:
+            return True, "无描述"
+
+    stars = parse_stars(repo.get('stars', '0'))
+    min_total = filters.get('min_total_stars', 0)
+    if min_total > 0 and stars < min_total:
+        return True, f"总星数 {stars} < {min_total}"
+
+    return False, ""
+
 # === 4. AI 摘要生成 (随机选一个 API，失败则换另一个) ===
 def generate_ai_summary(clients, repo, model_names):
     import random
@@ -150,11 +178,14 @@ def generate_ai_summary(clients, repo, model_names):
     
     return "", ""
 
-# === 5. Markdown 构建 (集成 SQLite) ===
+# === 5. Markdown 构建 (集成 SQLite + 过滤) ===
 def build_section(title, repos, settings, llm_clients, model_names):
     section = f"## {title}\n\n"
     section += "| 排名 | 项目 | Stars | 简介 (AI/Raw) |\n"
     section += "| :--- | :--- | :--- | :--- |\n"
+
+    filters = settings.get('filters', {})
+    filtered_count = 0
 
     for idx, repo in enumerate(repos, 1):
         name = repo['repo_name']
@@ -165,19 +196,25 @@ def build_section(title, repos, settings, llm_clients, model_names):
         final_desc = raw_desc
         model_tag = ""
         
-        # AI 逻辑
-        if settings['enable_llm']:
-            cached_summary = get_cached_summary(name)
-            
-            if cached_summary:
-                final_desc = f"🤖 {cached_summary}"
-            
-            elif any(llm_clients):
-                ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
-                if ai_sum:
-                    final_desc = f"🤖 [{model_used}] {ai_sum}"
-                    save_cached_summary(name, ai_sum)
-                time.sleep(1.5)
+        # 过滤检查
+        is_filtered, filter_reason = should_filter(repo, filters)
+        
+        if is_filtered:
+            final_desc = f"⛔ [{filter_reason}] {final_desc}"
+        else:
+            # AI 逻辑
+            if settings['enable_llm']:
+                cached_summary = get_cached_summary(name)
+                
+                if cached_summary:
+                    final_desc = f"🤖 {cached_summary}"
+                
+                elif any(llm_clients):
+                    ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
+                    if ai_sum:
+                        final_desc = f"🤖 [{model_used}] {ai_sum}"
+                        save_cached_summary(name, ai_sum)
+                    time.sleep(1.5)
         
         if len(final_desc) > 150:
             final_desc = final_desc[:147] + "..."
