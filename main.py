@@ -141,10 +141,8 @@ def should_filter(repo, filters):
 
     return False, ""
 
-# === 4. AI 摘要生成 (随机选一个 API，失败则换另一个) ===
+# === 4. AI 摘要生成 (MiniMax 优先，失败则用 llama) ===
 def generate_ai_summary(clients, repo, model_names):
-    import random
-    
     name = repo['repo_name']
     desc = repo['description']
     
@@ -154,10 +152,7 @@ def generate_ai_summary(clients, repo, model_names):
         "请用中文一句话概括这个项目的核心功能，不要废话。"
     )
 
-    indices = list(range(len(clients)))
-    random.shuffle(indices)
-    
-    for i in indices:
+    for i in range(len(clients)):
         client = clients[i]
         model = model_names[i]
         if not client:
