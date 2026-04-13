@@ -6,6 +6,7 @@ import datetime
 import sqlite3
 from bs4 import BeautifulSoup
 from openai import OpenAI
+import anthropic
 
 # === 1. 配置加载 ===
 def load_config():
@@ -146,8 +147,8 @@ def should_filter(repo, filters):
 
     return False, ""
 
-# === 4. AI 摘要生成 (MiniMax 优先，失败则用 llama) ===
-def generate_ai_summary(clients, repo, model_names):
+# === 4. AI 摘要生成 (MiniMax 优先，失败则用 OpenAI/llama) ===
+def generate_ai_summary(minimax_client, minimax_model, openai_client, openai_model, repo):
     name = repo['repo_name']
     desc = repo['description']
     
@@ -157,15 +158,32 @@ def generate_ai_summary(clients, repo, model_names):
         "请用中文一句话概括这个项目的核心功能，不要废话。"
     )
 
-    for i in range(len(clients)):
-        client = clients[i]
-        model = model_names[i]
-        if not client:
-            continue
-        
+    # MiniMax 优先 (Anthropic SDK)
+    if minimax_client and minimax_model:
         try:
-            response = client.chat.completions.create(
-                model=model,
+            message = minimax_client.messages.create(
+                model=minimax_model,
+                max_tokens=100,
+                system="你是一个技术专家。",
+                messages=[
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                timeout=20
+            )
+            text = message.content[0].text.strip()
+            if text:
+                return text, minimax_model
+        except Exception as e:
+            print(f"⚠️ [{minimax_model}] 接口错误: {e}")
+    
+    # 备用 OpenAI/llama (OpenAI SDK)
+    if openai_client and openai_model:
+        try:
+            response = openai_client.chat.completions.create(
+                model=openai_model,
                 messages=[
                     {"role": "system", "content": "你是一个技术专家。"},
                     {"role": "user", "content": prompt}
@@ -176,15 +194,14 @@ def generate_ai_summary(clients, repo, model_names):
             )
             text = response.choices[0].message.content.strip()
             if text:
-                return text, model
+                return text, openai_model
         except Exception as e:
-            print(f"⚠️ [{model}] 接口错误: {e}")
-            continue
+            print(f"⚠️ [{openai_model}] 接口错误: {e}")
     
     return "", ""
 
 # === 5. Markdown 构建 (集成 SQLite + 过滤) ===
-def build_section(title, repos, settings, llm_clients, model_names):
+def build_section(title, repos, settings, minimax_client, minimax_model, openai_client, openai_model):
     section = f"## {title}\n\n"
     section += "| 排名 | 项目 | Stars | 简介 (AI/Raw) |\n"
     section += "| :--- | :--- | :--- | :--- |\n"
@@ -215,8 +232,8 @@ def build_section(title, repos, settings, llm_clients, model_names):
                     model_tag = f"[{cached_model}] " if cached_model else "[Cached] "
                     final_desc = f"🤖 {model_tag}{cached_summary}"
                 
-                elif any(llm_clients):
-                    ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
+                elif minimax_client or openai_client:
+                    ai_sum, model_used = generate_ai_summary(minimax_client, minimax_model, openai_client, openai_model, repo)
                     if ai_sum:
                         final_desc = f"🤖 [{model_used}] {ai_sum}"
                         save_cached_summary(name, ai_sum, model_used)
@@ -248,21 +265,22 @@ def main():
     
     init_db()
     
-    llm_clients = [None, None]
-    model_names = ["", ""]
+    minimax_client = None
+    minimax_model = ""
+    openai_client = None
+    openai_model = ""
     
     if settings['enable_llm']:
         minimax_api_key = os.environ.get("MINIMAX_API_KEY")
-        minimax_base_url = os.environ.get("MINIMAX_BASE_URL", "https://api.minimaxi.com/anthropic")
         if minimax_api_key:
-            llm_clients[0] = OpenAI(api_key=minimax_api_key, base_url=minimax_base_url)
-            model_names[0] = os.getenv("LLM_MODEL", "MiniMax-M2.7")
+            minimax_client = anthropic.Anthropic(api_key=minimax_api_key)
+            minimax_model = os.getenv("LLM_MODEL", "MiniMax-M2.7")
         
         openai_api_key = os.environ.get("OPENAI_API_KEY")
         openai_base_url = os.environ.get("OPENAI_BASE_URL")
         if openai_api_key:
-            llm_clients[1] = OpenAI(api_key=openai_api_key, base_url=openai_base_url)
-            model_names[1] = settings.get('ai_model', 'gpt-3.5-turbo')
+            openai_client = OpenAI(api_key=openai_api_key, base_url=openai_base_url)
+            openai_model = settings.get('ai_model', 'gpt-3.5-turbo')
 
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     update_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M UTC")
@@ -274,7 +292,7 @@ def main():
         repos = scrape_github_trending(item['url'], limit=limit)
         
         if repos:
-            section_md = build_section(item['title'], repos, settings, llm_clients, model_names)
+            section_md = build_section(item['title'], repos, settings, minimax_client, minimax_model, openai_client, openai_model)
             report_content += section_md + "\n"
         
         time.sleep(2)
