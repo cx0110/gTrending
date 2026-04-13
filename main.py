@@ -37,6 +37,10 @@ def init_db():
             )
         """)
         conn.execute("CREATE INDEX IF NOT EXISTS idx_name ON project_history (name)")
+        try:
+            conn.execute("ALTER TABLE project_history ADD COLUMN model TEXT")
+        except:
+            pass
 
 def get_cached_summary(name):
     """从数据库查询摘要和模型"""
