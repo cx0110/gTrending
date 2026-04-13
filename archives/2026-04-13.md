@@ -2,30 +2,30 @@
 
 自动抓取 GitHub 官方热榜，由 AI 辅助生成中文摘要。
 
-> 更新时间: 2026-04-13 15:02 UTC
+> 更新时间: 2026-04-13 15:04 UTC
 
 
 ## 🔥 全球热榜 (General)
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 71,200 | 🤖 [Cached] Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
+| 1 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 71,223 | 🤖 [Cached] Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
 | 2 | [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) | 16,268 | 🤖 [Cached] Kronos是一个针对金融市场语言的基础模型，旨在理解和处理金融市场相关的语言和数据。 |
-| 3 | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | 18,527 | 🤖 [Cached] 该项目记录和总结了Andrej Karpathy的技能和经验，包括深度学习、计算机视觉和自然语言处理等领域的知识和技术。 |
-| 4 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | 105,667 | 🤖 [Cached] 该项目是一个Python工具，用于将文件和办公文档转换为Markdown格式。 |
-| 5 | [multica-ai/multica](https://github.com/multica-ai/multica) | 9,925 | 🤖 [Cached] 该项目是一个开源的智能代理管理平台，能够让编码代理像真正的团队成员一样工作，接受任务、跟踪进度和积累技能。 |
+| 3 | [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) | 18,540 | 🤖 [Cached] 该项目记录和总结了Andrej Karpathy的技能和经验，包括深度学习、计算机视觉和自然语言处理等领域的知识和技术。 |
+| 4 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | 105,669 | 🤖 [Cached] 该项目是一个Python工具，用于将文件和办公文档转换为Markdown格式。 |
+| 5 | [multica-ai/multica](https://github.com/multica-ai/multica) | 9,928 | 🤖 [Cached] 该项目是一个开源的智能代理管理平台，能够让编码代理像真正的团队成员一样工作，接受任务、跟踪进度和积累技能。 |
 | 6 | [coleam00/Archon](https://github.com/coleam00/Archon) | 17,268 | 🤖 [Cached] 该项目是一个开源的工具，旨在使AI编码变得确定性和可重复，通过构建编码框架来实现这一目标。 |
-| 7 | [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 39,742 | 🤖 [Cached] 该项目旨在实践和改进代码的最佳实践，以使Claude的代码达到完美状态。 |
-| 8 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 11,632 | 🤖 [Cached] VoxCPM是一个无需分词器的语音合成和语音克隆系统，能够实现上下文感知的语音生成和真实的语音克隆。 |
-| 9 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 50,902 | 🤖 [Cached] 该项目是一个Claude Code插件，能够自动记录和压缩编码过程，并将相关上下文注入到未来的编码会话中。 |
-| 10 | [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) | 19,239 | ⛔ [无描述] 无描述 |
+| 7 | [shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice) | 39,744 | 🤖 [Cached] 该项目旨在实践和改进代码的最佳实践，以使Claude的代码达到完美状态。 |
+| 8 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 11,634 | 🤖 [Cached] VoxCPM是一个无需分词器的语音合成和语音克隆系统，能够实现上下文感知的语音生成和真实的语音克隆。 |
+| 9 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 50,907 | 🤖 [Cached] 该项目是一个Claude Code插件，能够自动记录和压缩编码过程，并将相关上下文注入到未来的编码会话中。 |
+| 10 | [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) | 19,240 | ⛔ [无描述] 无描述 |
 
 ## 🐹 Go 语言热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
 | 1 | [steipete/wacli](https://github.com/steipete/wacli) | 915 | 🤖 [Cached] 该项目是一个命令行界面工具，允许用户在终端中发送和接收WhatsApp消息。 |
-| 2 | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | 12,092 | 🤖 [Cached] Sub2API-CRS2 是一站式开源中转服务，实现 Claude、Openai 、Gemini、Antigravity 等订阅服务的统一接入和拼车共享。 |
+| 2 | [Wei-Shaw/sub2api](https://github.com/Wei-Shaw/sub2api) | 12,093 | 🤖 [Cached] Sub2API-CRS2 是一站式开源中转服务，实现 Claude、Openai 、Gemini、Antigravity 等订阅服务的统一接入和拼车共享。 |
 | 3 | [googleapis/mcp-toolbox](https://github.com/googleapis/mcp-toolbox) | 14,500 | 🤖 [Cached] MCP Toolbox 为数据库提供了一个开源的MCP服务器。 |
 | 4 | [mostlygeek/llama-swap](https://github.com/mostlygeek/llama-swap) | 3,229 | 🤖 [Cached] 该项目实现了可靠的模型交换功能，支持在本地OpenAI/Anthropic兼容服务器（如llama.cpp、vllm等）上进行模型切换。 |
 | 5 | [GopeedLab/gopeed](https://github.com/GopeedLab/gopeed) | 23,852 | 🤖 [Cached] GopeedLab/gopeed是一个支持所有平台的现代下载管理器，使用Golang和Flutter开发。 |
@@ -39,15 +39,15 @@
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 71,202 | 🤖 [Cached] Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
+| 1 | [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent) | 71,223 | 🤖 [Cached] Hermes-agent是一个用于管理和监控分布式系统的代理程序，提供资源监控、日志收集和告警通知等功能。 |
 | 2 | [shiyu-coder/Kronos](https://github.com/shiyu-coder/Kronos) | 16,268 | 🤖 [Cached] Kronos是一个针对金融市场语言的基础模型，旨在理解和处理金融市场相关的语言和数据。 |
-| 3 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | 105,668 | 🤖 [Cached] 该项目是一个Python工具，用于将文件和办公文档转换为Markdown格式。 |
-| 4 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 11,632 | 🤖 [Cached] VoxCPM是一个无需分词器的语音合成和语音克隆系统，能够实现上下文感知的语音生成和真实的语音克隆。 |
-| 5 | [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) | 19,239 | ⛔ [无描述] 无描述 |
-| 6 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 52,430 | 🤖 [Cached] 该项目是一个利用人工智能技术来管理对冲基金的团队，旨在使用AI算法进行投资决策和风险管理。 |
-| 7 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 17,401 | 🤖 [Cached] DeepTutor是一个智能的个性化学习助手，利用人工智能技术为每个学生提供针对性的学习指导和支持。 |
+| 3 | [microsoft/markitdown](https://github.com/microsoft/markitdown) | 105,669 | 🤖 [Cached] 该项目是一个Python工具，用于将文件和办公文档转换为Markdown格式。 |
+| 4 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 11,634 | 🤖 [Cached] VoxCPM是一个无需分词器的语音合成和语音克隆系统，能够实现上下文感知的语音生成和真实的语音克隆。 |
+| 5 | [ahujasid/blender-mcp](https://github.com/ahujasid/blender-mcp) | 19,240 | ⛔ [无描述] 无描述 |
+| 6 | [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) | 52,434 | 🤖 [Cached] 该项目是一个利用人工智能技术来管理对冲基金的团队，旨在使用AI算法进行投资决策和风险管理。 |
+| 7 | [HKUDS/DeepTutor](https://github.com/HKUDS/DeepTutor) | 17,402 | 🤖 [Cached] DeepTutor是一个智能的个性化学习助手，利用人工智能技术为每个学生提供针对性的学习指导和支持。 |
 | 8 | [itigges22/ATLAS](https://github.com/itigges22/ATLAS) | 1,871 | 🤖 [llama-3.3-70b-versatile] 该项目实现了自适应测试时学习和自主专业化的功能。 |
-| 9 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 29,592 | 🤖 [Cached] 该项目是一个LLM驱动的智能股票分析系统，集成了多数据源行情、实时新闻、LLM决策仪表盘和多渠道推送功能。 |
+| 9 | [ZhuLinsen/daily_stock_analysis](https://github.com/ZhuLinsen/daily_stock_analysis) | 29,593 | 🤖 [Cached] 该项目是一个LLM驱动的智能股票分析系统，集成了多数据源行情、实时新闻、LLM决策仪表盘和多渠道推送功能。 |
 | 10 | [yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp) | 156,500 | 🤖 [Cached] yt-dlp是一个功能丰富的命令行音频/视频下载器。 |
 
 ## 🟨 JavaScript/TypeScript 热门
@@ -62,14 +62,14 @@
 | 6 | [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) | 20,661 | 🤖 [Cached] 该项目为人工智能代理和Claude Code提供营销技能，包括转化率优化、文案写作、搜索引擎优化、分析和增长工程等。 |
 | 7 | [zen-browser/desktop](https://github.com/zen-browser/desktop) | 41,417 | 🤖 [Cached] Zen Browser是一个旨在提供更平静和专注的上网体验的浏览器。 |
 | 8 | [gorhill/uBlock](https://github.com/gorhill/uBlock) | 62,713 | 🤖 [Cached] uBlock Origin是一个高效的浏览器插件，用于阻止网页上的广告和跟踪器。 |
-| 9 | [Acode-Foundation/Acode](https://github.com/Acode-Foundation/Acode) | 5,040 | 🤖 [Cached] Acode是一个功能强大的Android文本和代码编辑器。 |
+| 9 | [Acode-Foundation/Acode](https://github.com/Acode-Foundation/Acode) | 5,041 | 🤖 [Cached] Acode是一个功能强大的Android文本和代码编辑器。 |
 | 10 | [vercel/next.js](https://github.com/vercel/next.js) | 138,871 | 🤖 [Cached] Vercel/Next.js是一个基于React的服务器端渲染和静态网站生成框架。 |
 
 ## ☕ Java 热门
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 16,247 | 🤖 [Cached] 该项目是一个开源的PDF解析器，旨在将PDF文件转换为AI可用的数据格式，并实现PDF的自动化无障碍化。 |
+| 1 | [opendataloader-project/opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf) | 16,248 | 🤖 [Cached] 该项目是一个开源的PDF解析器，旨在将PDF文件转换为AI可用的数据格式，并实现PDF的自动化无障碍化。 |
 | 2 | [PaperMC/Paper](https://github.com/PaperMC/Paper) | 12,155 | 🤖 [Cached] PaperMC/Paper是一个高性能的Minecraft服务器，旨在修复游戏和机制的不一致性。 |
 | 3 | [termux/termux-app](https://github.com/termux/termux-app) | 53,286 | 🤖 [Cached] Termux是一个可扩展的Android终端模拟器应用程序，支持安装多种软件包。 |
 | 4 | [crimera/piko](https://github.com/crimera/piko) | 3,156 | 🤖 [Cached] 该项目“crimera/piko”主要是为Twitter创建Morphe补丁。 |
@@ -84,7 +84,7 @@
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [rustfs/rustfs](https://github.com/rustfs/rustfs) | 25,406 | 🤖 [Cached] RustFS是一个开源的、兼容S3的高性能对象存储系统，支持与其他S3兼容平台的迁移和共存。 |
+| 1 | [rustfs/rustfs](https://github.com/rustfs/rustfs) | 25,408 | 🤖 [Cached] RustFS是一个开源的、兼容S3的高性能对象存储系统，支持与其他S3兼容平台的迁移和共存。 |
 | 2 | [pydantic/monty](https://github.com/pydantic/monty) | 6,778 | 🤖 [Cached] 该项目是一个使用Rust编写的最小化、安全的Python解释器，用于AI应用。 |
 | 3 | [openai/codex](https://github.com/openai/codex) | 74,889 | 🤖 [Cached] Openai/codex是一个轻量级的编码代理，可以在终端中运行，帮助用户完成编码任务。 |
 | 4 | [louis-e/arnis](https://github.com/louis-e/arnis) | 14,857 | 🤖 [Cached] 该项目可以在Minecraft中生成任何现实世界地点，具有高细节度。 |
@@ -114,7 +114,7 @@
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [2dust/v2rayN](https://github.com/2dust/v2rayN) | 101,833 | 🤖 [Cached] 该项目是一个跨平台的图形界面客户端，支持Xray、sing-box等多种协议，适用于Windows、Linux和macOS系统。 |
+| 1 | [2dust/v2rayN](https://github.com/2dust/v2rayN) | 101,834 | 🤖 [Cached] 该项目是一个跨平台的图形界面客户端，支持Xray、sing-box等多种协议，适用于Windows、Linux和macOS系统。 |
 | 2 | [mehdihadeli/awesome-software-architecture](https://github.com/mehdihadeli/awesome-software-architecture) | 10,908 | 🤖 [Cached] 这个项目是一个软件架构学习资源集合，包括文章、视频和其他资源，用于学习和实践软件架构、模式和原则。 |
 | 3 | [QuantConnect/Lean](https://github.com/QuantConnect/Lean) | 18,376 | 🤖 [Cached] Lean是一个开源的算法交易引擎，支持Python和C#语言，用于构建和执行算法交易策略。 |
 | 4 | [creazyboyone/FastGithub](https://github.com/creazyboyone/FastGithub) | 931 | 🤖 [Cached] FastGithub 是一个 GitHub 加速工具，旨在解决 GitHub 打不开、加载头像、上传下载 Releases、git 操作等问题。 |
@@ -129,9 +129,9 @@
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [multica-ai/multica](https://github.com/multica-ai/multica) | 9,925 | 🤖 [Cached] 该项目是一个开源的智能代理管理平台，能够让编码代理像真正的团队成员一样工作，接受任务、跟踪进度和积累技能。 |
+| 1 | [multica-ai/multica](https://github.com/multica-ai/multica) | 9,929 | 🤖 [Cached] 该项目是一个开源的智能代理管理平台，能够让编码代理像真正的团队成员一样工作，接受任务、跟踪进度和积累技能。 |
 | 2 | [coleam00/Archon](https://github.com/coleam00/Archon) | 17,268 | 🤖 [Cached] 该项目是一个开源的工具，旨在使AI编码变得确定性和可重复，通过构建编码框架来实现这一目标。 |
-| 3 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 50,902 | 🤖 [Cached] 该项目是一个Claude Code插件，能够自动记录和压缩编码过程，并将相关上下文注入到未来的编码会话中。 |
+| 3 | [thedotmack/claude-mem](https://github.com/thedotmack/claude-mem) | 50,907 | 🤖 [Cached] 该项目是一个Claude Code插件，能够自动记录和压缩编码过程，并将相关上下文注入到未来的编码会话中。 |
 | 4 | [snarktank/ralph](https://github.com/snarktank/ralph) | 16,151 | 🤖 [Cached] Ralph是一个自主的AI代理循环，持续运行直到所有产品需求（PRD）项目全部完成。 |
 | 5 | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | 15,498 | 🤖 [Cached] 该项目是一个开源的语音合成工作室，提供语音合成和编辑功能。 |
 | 6 | [yousifamanuel/terraink](https://github.com/yousifamanuel/terraink) | 2,589 | 🤖 [Cached] TerraInk是一个地图海报引擎，能够创建独特且可定制的海报地图。 |
@@ -159,7 +159,7 @@
 
 | 排名 | 项目 | Stars | 简介 (AI/Raw) |
 | :--- | :--- | :--- | :--- |
-| 1 | [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 150,727 | 🤖 [Cached] 该项目分享和整理了GitHub上有趣且适合入门的开源项目。 |
+| 1 | [521xueweihan/HelloGitHub](https://github.com/521xueweihan/HelloGitHub) | 150,729 | 🤖 [Cached] 该项目分享和整理了GitHub上有趣且适合入门的开源项目。 |
 | 2 | [ScottSloan/Bili23-Downloader](https://github.com/ScottSloan/Bili23-Downloader) | 3,865 | 🤖 [Cached] Bili23-Downloader是一款跨平台的B站视频下载工具，支持音视频流分离下载、多线程加速、弹幕与字幕获取等功能。 |
 | 3 | [PlexPt/awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) | 59,006 | 🤖 [Cached] 该项目提供了ChatGPT的中文调教指南和各种场景使用指南，帮助用户学习如何有效地与ChatGPT交互。 |
 | 4 | [iDvel/rime-ice](https://github.com/iDvel/rime-ice) | 16,517 | 🤖 [Cached] 该项目为Rime输入法提供了一个名为“雾凇拼音”的配置，包含长期维护的简体词库。 |
