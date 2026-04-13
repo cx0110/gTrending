@@ -212,7 +212,7 @@ def build_section(title, repos, settings, llm_clients, model_names):
                 cached_summary, cached_model = get_cached_summary(name)
                 
                 if cached_summary:
-                    model_tag = f"[{cached_model}] " if cached_model else ""
+                    model_tag = f"[{cached_model}] " if cached_model else "[Cached] "
                     final_desc = f"🤖 {model_tag}{cached_summary}"
                 
                 elif any(llm_clients):
