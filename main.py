@@ -37,10 +37,15 @@ def init_db():
             )
         """)
         conn.execute("CREATE INDEX IF NOT EXISTS idx_name ON project_history (name)")
-        try:
+        cursor = conn.execute("PRAGMA table_info(project_history)")
+        columns = [row[1] for row in cursor.fetchall()]
+        if 'model' not in columns:
             conn.execute("ALTER TABLE project_history ADD COLUMN model TEXT")
-        except:
-            pass
+            conn.execute("DELETE FROM project_history")
+        else:
+            cursor = conn.execute("SELECT COUNT(*) FROM project_history WHERE model IS NULL")
+            if cursor.fetchone()[0] > 0:
+                conn.execute("DELETE FROM project_history")
 
 def get_cached_summary(name):
     """从数据库查询摘要和模型"""
