@@ -32,29 +32,30 @@ def init_db():
             CREATE TABLE IF NOT EXISTS project_history (
                 name TEXT PRIMARY KEY,
                 summary TEXT,
+                model TEXT,
                 updated_at TEXT
             )
         """)
         conn.execute("CREATE INDEX IF NOT EXISTS idx_name ON project_history (name)")
 
 def get_cached_summary(name):
-    """从数据库查询摘要"""
+    """从数据库查询摘要和模型"""
     if not os.path.exists(DB_PATH):
-        return None
+        return None, None
     
     with sqlite3.connect(DB_PATH) as conn:
-        cursor = conn.execute("SELECT summary FROM project_history WHERE name = ?", (name,))
+        cursor = conn.execute("SELECT summary, model FROM project_history WHERE name = ?", (name,))
         row = cursor.fetchone()
-        return row[0] if row else None
+        return (row[0], row[1]) if row else (None, None)
 
-def save_cached_summary(name, summary):
+def save_cached_summary(name, summary, model):
     """保存摘要到数据库"""
     today = datetime.datetime.now().strftime("%Y-%m-%d")
     with sqlite3.connect(DB_PATH) as conn:
         conn.execute("""
-            REPLACE INTO project_history (name, summary, updated_at) 
-            VALUES (?, ?, ?)
-        """, (name, summary, today))
+            REPLACE INTO project_history (name, summary, model, updated_at) 
+            VALUES (?, ?, ?, ?)
+        """, (name, summary, model, today))
 
 # === 3. 爬虫逻辑 (BeautifulSoup) ===
 def scrape_github_trending(url, limit=10):
@@ -204,16 +205,17 @@ def build_section(title, repos, settings, llm_clients, model_names):
         else:
             # AI 逻辑
             if settings['enable_llm']:
-                cached_summary = get_cached_summary(name)
+                cached_summary, cached_model = get_cached_summary(name)
                 
                 if cached_summary:
-                    final_desc = f"🤖 {cached_summary}"
+                    model_tag = f"[{cached_model}] " if cached_model else ""
+                    final_desc = f"🤖 {model_tag}{cached_summary}"
                 
                 elif any(llm_clients):
                     ai_sum, model_used = generate_ai_summary(llm_clients, repo, model_names)
                     if ai_sum:
                         final_desc = f"🤖 [{model_used}] {ai_sum}"
-                        save_cached_summary(name, ai_sum)
+                        save_cached_summary(name, ai_sum, model_used)
                     time.sleep(1.5)
         
         if len(final_desc) > 150:
